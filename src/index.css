@@ -1,7 +1,6 @@
 #root {
-  font-family: "nanum-square-neo", sans-serif;
+  font-family: "PretendardW400", sans-serif;
 }
-
 
 /* nanum-square-neo */
 
@@ -21,4 +20,58 @@
   font-family: "nanum-square-neo";
   font-weight: 900;
   src: url("./assets/fonts/nanum-square-neo/NanumSquareNeoOTF-eHv.otf");
+}
+
+@font-face {
+  font-family: PretendardW100;
+  src: url("./assets/fonts/pretendard/Pretendard-Thin.woff");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: PretendardW200;
+  src: url("./assets/fonts/pretendard/Pretendard-ExtraLight.woff");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: PretendardW300;
+  src: url("./assets/fonts/pretendard/Pretendard-Light.woff");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: PretendardW400;
+  src: url("./assets/fonts/pretendard/Pretendard-Regular.woff");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: PretendardW500;
+  src: url("./assets/fonts/pretendard/Pretendard-Medium.woff");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: PretendardW600;
+  src: url("./assets/fonts/pretendard/Pretendard-SemiBold.woff");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: PretendardW700;
+  src: url("./assets/fonts/pretendard/Pretendard-Bold.woff");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: PretendardW800;
+  src: url("./assets/fonts/pretendard/Pretendard-ExtraBold.woff");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: PretendardW900;
+  src: url("./assets/fonts/pretendard/Pretendard-Black.woff");
+  font-weight: 900;
 }

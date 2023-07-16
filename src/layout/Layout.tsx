@@ -1,3 +1,4 @@
+import { MyThemeProvider } from "@dohyun-ko/react-atoms";
 import { useAtom } from "jotai";
 import React from "react";
 import { Outlet } from "react-router-dom";
@@ -44,7 +45,7 @@ const Layout: React.FC = () => {
   const [modalList, setModalList] = useAtom(modalListAtom);
 
   return (
-    <>
+    <MyThemeProvider>
       <Outlet />
 
       {modalList.map((modal, index) => (
@@ -70,7 +71,7 @@ const Layout: React.FC = () => {
         draggable
         pauseOnHover
       />
-    </>
+    </MyThemeProvider>
   );
 };
 

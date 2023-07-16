@@ -1,16 +1,11 @@
-import { Area, Circle, MyThemeProvider } from "@dohyun-ko/react-atoms";
+import { Area, Circle } from "@dohyun-ko/react-atoms";
 
 const HomePage = () => {
   return (
-    <MyThemeProvider>
-      <Area>
-        <Circle diameter={"20px"} />
-      </Area>
-    </MyThemeProvider>
+    <Area>
+      <Circle diameter={"20px"} />
+    </Area>
   );
 };
 
 export default HomePage;
-
-
-interface HomePageProps {}
