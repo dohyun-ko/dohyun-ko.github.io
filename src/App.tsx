@@ -13,7 +13,7 @@ function App() {
       <Routes>
         <Route element={<Layout />}>
           {/* <Route path={RoutePath.HOME} element={<HomePage />} /> */}
-          <Route path={"*"} element={<Navigate to="/" replace />} />
+          <Route path={"*"} element={<Navigate to="/resume" replace />} />
           <Route path={RoutePath.RESUME} element={<ResumePage />} />
         </Route>
       </Routes>
