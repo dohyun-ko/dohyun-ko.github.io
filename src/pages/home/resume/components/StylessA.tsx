@@ -1,8 +1,21 @@
-import styled from "styled-components";
+interface StylessAProps {
+  href: string;
+  children: React.ReactNode;
+}
 
-const StylessA = styled.a`
-  text-decoration: none;
-  color: inherit;
-`;
+const StylessA = ({ href, children }: StylessAProps) => {
+  return (
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      style={{
+        color: "inherit",
+      }}
+    >
+      {children}
+    </a>
+  );
+};
 
 export default StylessA;

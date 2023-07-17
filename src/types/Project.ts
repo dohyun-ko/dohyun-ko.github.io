@@ -5,7 +5,7 @@ interface Project {
   endedAt?: Date;
   description: string;
   whatIDid: string[];
-  techStacks: string[];
+  techStacks?: string[];
 }
 
 export default Project;

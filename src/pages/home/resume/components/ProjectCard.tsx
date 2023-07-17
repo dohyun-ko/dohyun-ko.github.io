@@ -51,21 +51,25 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
 
       <Spacer height={"10px"} />
 
-      <Text font={Font.Medium} size={"1.25rem"}>
-        What I used
-      </Text>
+      {techStacks && techStacks.length > 0 && (
+        <>
+          <Text font={Font.Medium} size={"1.25rem"}>
+            What I used
+          </Text>
 
-      <ul
-        style={{
-          margin: "0px",
-        }}
-      >
-        {techStacks.map((techStack) => (
-          <li key={techStack}>
-            <Text>{techStack}</Text>
-          </li>
-        ))}
-      </ul>
+          <ul
+            style={{
+              margin: "0px",
+            }}
+          >
+            {techStacks.map((techStack) => (
+              <li key={techStack}>
+                <Text>{techStack}</Text>
+              </li>
+            ))}
+          </ul>
+        </>
+      )}
     </Flex>
   );
 };
