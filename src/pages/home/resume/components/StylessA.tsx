@@ -1,5 +1,5 @@
 interface StylessAProps {
-  href: string;
+  href?: string;
   children: React.ReactNode;
 }
 

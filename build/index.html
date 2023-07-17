@@ -12,8 +12,28 @@
 
     <!-- For new browsers - multisize ico  -->
     <link href="favicon.ico" rel="icon" type="image/x-icon" />
-    <script type="module" crossorigin src="/assets/index-db5b4e23.js"></script>
-    <link rel="stylesheet" href="/assets/index-98c7f9a6.css">
+
+    <script type="text/javascript">
+      window.smartlook ||
+        (function (d) {
+          var o = (smartlook = function () {
+              o.api.push(arguments);
+            }),
+            h = d.getElementsByTagName("head")[0];
+          var c = d.createElement("script");
+          o.api = new Array();
+          c.async = true;
+          c.type = "text/javascript";
+          c.charset = "utf-8";
+          c.src = "https://web-sdk.smartlook.com/recorder.js";
+          h.appendChild(c);
+        })(document);
+      smartlook("init", "dc73d66bf56bb145f1d722e485e3939b25aaebde", {
+        region: "eu",
+      });
+    </script>
+    <script type="module" crossorigin src="/assets/index-4426daab.js"></script>
+    <link rel="stylesheet" href="/assets/index-ccc18496.css">
   </head>
   <body>
     <div id="root"></div>
