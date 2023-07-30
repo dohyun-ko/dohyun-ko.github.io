@@ -126,6 +126,13 @@ const data = {
           whatIDid: ["C언어 교육 진행"],
           techStacks: ["C"],
         },
+        {
+          name: "CubeSat 개발",
+          startedAt: new Date("2023-07"),
+          description: "2025년 발사 예정인 CubeSat을 개발하고 있습니다.",
+          whatIDid: ["Flight Software 개발", "통신 시스템 개발"],
+          techStacks: ["C", "Zigbee"],
+        },
       ],
     },
   ],

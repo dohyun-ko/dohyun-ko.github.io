@@ -307,15 +307,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@dohyun-ko/react-atoms@npm:^0.1.2":
-  version: 0.1.2
-  resolution: "@dohyun-ko/react-atoms@npm:0.1.2::__archiveUrl=https%3A%2F%2Fnpm.pkg.github.com%2Fdownload%2F%40dohyun-ko%2Freact-atoms%2F0.1.2%2Ffc320cb229a9481c6350ffd1f28102650998842d"
+"@dohyun-ko/react-atoms@npm:^0.1.7":
+  version: 0.1.7
+  resolution: "@dohyun-ko/react-atoms@npm:0.1.7::__archiveUrl=https%3A%2F%2Fnpm.pkg.github.com%2Fdownload%2F%40dohyun-ko%2Freact-atoms%2F0.1.7%2Fba795fd81ec05ff93f2fdec592b1cb3db88eae09"
   peerDependencies:
     react: ^18.2.0
     react-dom: ^18.2.0
     react-is: ^18.2.0
     styled-components: ^5.3.6
-  checksum: 3d41ea9c527b66dc2c65c07762c99ad8f62433483bd966f287e86419e037911588c5a0415550e130839a25173b6fe433d44809444174249195879adf4c01b9d2
+  checksum: b306ada02dcaaaa52895fc4c389fc997e978a42c97a6dc2c25db7c46e910a10153772ce47ad34110103dd0db5e935c345c261f040202a3de110b8f72acf8a3f0
   languageName: node
   linkType: hard
 
@@ -1721,7 +1721,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "dohyun-ko.github.io@workspace:."
   dependencies:
-    "@dohyun-ko/react-atoms": ^0.1.2
+    "@dohyun-ko/react-atoms": ^0.1.7
     "@types/eslint": ^8
     "@types/node": ^18.11.18
     "@types/prettier": ^2
