@@ -42,14 +42,25 @@ const data = {
           startedAt: new Date("2023-07"),
 
           description: "러시아워의 플루터 버전 개발에 참여하고 있습니다.",
-          whatIDid: ["러시아워 플루터 앱 개발"],
-          techStacks: ["Flutter"],
+          whatIDid: ["러시아워 플루터 앱 개발", "앱 유저 로그 기록"],
+          techStacks: ["Flutter", "Firebase"],
+        },
+        {
+          name: "러시아워 AI",
+          startedAt: new Date("2023-09"),
+
+          description: "러시아워 AI 개발에 참여하고 있습니다.",
+          whatIDid: [
+            "지하철 혼잡도 예측 AI 개발",
+            "지하철 빈자리 예측 AI 개발",
+          ],
+          techStacks: ["PyTorch"],
         },
         {
           name: "기타",
           startedAt: new Date("2022-02"),
           description:
-            "스타트업에 개발자로서 다양한 개발 업무를 수행하고 있습니다.",
+            "스타트업의 개발자로서 다양한 개발 업무를 수행하고 있습니다.",
           whatIDid: [
             "랜딩 페이지 개발",
             "관리자 페이지 개발",
@@ -92,7 +103,7 @@ const data = {
           description:
             "GIST 공지 통합 시스템인 Ziggle의 프론트엔드를 개발하고 있습니다.",
           whatIDid: ["프론트엔드 개발"],
-          techStacks: ["React", "TypeScript"],
+          techStacks: ["React", "TypeScript", "Next.js"],
         },
       ],
     },
@@ -122,6 +133,7 @@ const data = {
         {
           name: "C언어 교육 진행",
           startedAt: new Date("2023-07"),
+          endedAt: new Date("2023-08"),
           description: "부원들에게 C언어 교육을 진행합니다.",
           whatIDid: ["C언어 교육 진행"],
           techStacks: ["C"],
@@ -129,7 +141,7 @@ const data = {
         {
           name: "CubeSat 개발",
           startedAt: new Date("2023-07"),
-          description: "2025년 발사 예정인 CubeSat을 개발하고 있습니다.",
+          description: "2025년 발사 예정인 큐브위성을 개발하고 있습니다.",
           whatIDid: ["Flight Software 개발", "통신 시스템 개발"],
           techStacks: ["C", "Zigbee"],
         },

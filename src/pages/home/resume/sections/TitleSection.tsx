@@ -8,27 +8,31 @@ const TitleSection = ({}: TitleSectionProps) => {
   return (
     <Area id="title-section">
       <Content>
-        <Text as={"h1"} font={Font.Bold} size={"4rem"}>
+        <Text as={"h1"} font={Font.Bold} size={"3.5rem"}>
           개발자 고도현 | Dohyun Ko
         </Text>
 
         <Text font={Font.Medium} size={"1.5rem"}>
-          2년차 프론트엔드 개발자로, React와 코드 재사용을 정말 좋아합니다.
-          스타트업에서 일하기에 프론트엔드, 백엔드, 인프라 등 다양한 경험을 쌓고
-          있습니다. 게임 개발과 로보틱스에도 관심이 많습니다.
+          2년차 프론트엔드 개발자로, 유지보수하기 쉬운 코드를 좋아합니다.
+          스타트업에서 일하기에 프론트엔드, 백엔드, 인프라, AI 등 다양한 경험을
+          쌓고 있습니다. '가지 않은 길'을 가는 것을 목표로 언제나 다양한 도전을
+          합니다.
         </Text>
 
         <Spacer height={"30px"} />
 
         <Flex>
           <Text size={"1.5rem"}>
-            <StylessA href="https://github.com/dohyun-ko">GitHub</StylessA> |{" "}
             <StylessA href="mailto:dohyun682@gmail.com">
               dohyun682@gmail.com
             </StylessA>{" "}
-            |{" "}
+            | <StylessA href="https://github.com/dohyun-ko">GitHub</StylessA> |{" "}
             <StylessA href="https://www.instagram.com/dohyun682">
               Instagram
+            </StylessA>{" "}
+            |{" "}
+            <StylessA href="https://www.linkedin.com/in/dohyun-ko-92b885212">
+              LinkedIn
             </StylessA>
           </Text>
         </Flex>

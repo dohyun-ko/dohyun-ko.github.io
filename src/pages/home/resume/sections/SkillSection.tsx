@@ -21,6 +21,10 @@ const data = {
       level: 3,
     },
     {
+      name: "Python",
+      level: 3,
+    },
+    {
       name: "Flutter",
       level: 2,
     },
@@ -35,6 +39,10 @@ const data = {
     },
     {
       name: "Docker",
+      level: 1,
+    },
+    {
+      name: "Rust",
       level: 1,
     },
   ],
