@@ -122,7 +122,7 @@ const data = {
           description:
             "GIST 공지 통합 시스템인 Ziggle의 프론트엔드를 개발하고 있습니다.",
           whatIDid: ["프론트엔드 개발"],
-          techStacks: ["React", "TypeScript", "Next.js"],
+          techStacks: ["React", "TypeScript", "Next.js", "Tailwind CSS"],
         },
       ],
     },
