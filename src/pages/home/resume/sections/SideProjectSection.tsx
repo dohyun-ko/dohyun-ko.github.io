@@ -32,16 +32,26 @@ const data = {
       techStacks: ["React", "TypeScript", "RollUp", "Storybook", "npm"],
     },
     {
-      name: "2023 Net Challenge",
+      name: "2023 Net Challenge: 🥈 은상",
       url: "https://github.com/Net-Challenge-InfoTeam",
       startedAt: new Date("2023-06"),
+      endedAt: new Date("2023-12"),
       description:
-        "2023 Net Chanllenge에 참여중입니다. CCTV 데이터를 AI로 분석해 실시간으로 위협을 감지하고, 위협이 감지되면 주변 유저들에게 알림을 보내는 서비스를 개발하고 있습니다.",
+        "2023 Net Chanllenge에 참여했습니다. CCTV 데이터를 AI로 분석해 실시간으로 위협을 감지하고, 위협이 감지되면 주변 유저들에게 알림을 보내는 서비스를 개발했습니다.",
       whatIDid: [
         "React와 PWA를 사용한 앱 개발",
         "Mapbox를 사용해 실시간 위협 위치 표시",
       ],
       techStacks: ["React", "TypeScript", "Mapbox", "PWA"],
+    },
+    {
+      name: "2023 Creative Space G A.I. & IoT Makerthon: 🥈 2등",
+      startedAt: new Date("2023-10"),
+      endedAt: new Date("2023-11"),
+      description:
+        "메이커톤에서 GPT-4 API와 라즈베리파이를 결합해 일상 대화에서 의미를 추론해 스위치, 스피커 등 IoT 기기 조작하는 AI 비서를 개발했습니다.",
+      whatIDid: ["OpenAI API 연동", "기획 및 발표자료 준비"],
+      techStacks: ["Python"],
     },
   ],
 };

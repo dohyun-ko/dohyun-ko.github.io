@@ -6,6 +6,25 @@ interface CurrentPageProps {}
 
 const data = {
   organizations: [
+    // {
+    //   name: "GIST Data Science Lab",
+    //   color: "#b509ac",
+    //   url: "https://sundong.kim/members/",
+    //   job: "인턴",
+    //   startedAt: new Date("2024-01-02"),
+    //   projects: [
+    //     {
+    //       name: "도글리 프론트엔드",
+    //       url: "https://doggly.co.kr/",
+    //       startedAt: new Date("2022-08"),
+    //       endedAt: new Date("2023-03"),
+    //       description:
+    //         "강아지 의류 쇼핑몰인 도글리의 프론트엔드를 개발했습니다.",
+    //       whatIDid: ["도글리 프론트엔드 개발"],
+    //       techStacks: ["React", "TypeScript", "Jetpack Compose", "SwiftUI"],
+    //     },
+    //   ],
+    // },
     {
       name: "시고르자브종",
       color: "#FEAA17",
