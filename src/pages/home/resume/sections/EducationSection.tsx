@@ -36,7 +36,7 @@ const EducationSection = ({}: EducationSectionProps) => {
                 flexGrow: 0,
               }}
             />
-            <Text size={"1rem"}>TGPA 3.9 / 4.5</Text>
+            <Text size={"1rem"}>TGPA 3.93 / 4.5</Text>
           </Flex>
         </Flex>
       </Content>

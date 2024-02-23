@@ -2,6 +2,10 @@
   font-family: "PretendardW400", sans-serif;
 }
 
+a {
+  color: inherit;
+}
+
 @font-face {
   font-family: PretendardW100;
   src: url("./assets/fonts/pretendard/Pretendard-Thin.woff");

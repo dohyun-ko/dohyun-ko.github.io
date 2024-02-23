@@ -2,6 +2,7 @@ import Font from "@/types/Font";
 import Project from "@/types/Project";
 import { formatYearMonth } from "@/utils/dateFormats";
 import { Flex, Spacer, Text } from "@dohyun-ko/react-atoms";
+import ReactMarkdown from "react-markdown";
 import StylessA from "./StylessA";
 
 interface ProjectCardProps {
@@ -30,7 +31,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
       <Text font={Font.Medium} size={"1.25rem"}>
         Description
       </Text>
-      <Text>{description}</Text>
+      <ReactMarkdown>{description}</ReactMarkdown>
 
       <Spacer height={"10px"} />
 
