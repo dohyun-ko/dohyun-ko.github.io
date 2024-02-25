@@ -15,6 +15,16 @@ const data = {
       techStacks: ["React", "TypeScript", "Tailwind CSS"],
     },
     {
+      name: "Kaggle - Regression with a Mohs Hardness Dataset: 4등",
+      url: "https://www.kaggle.com/competitions/playground-series-s3e25",
+      startedAt: new Date("2023-10"),
+      endedAt: new Date("2023-12"),
+      description:
+        "Kaggle의 광물 모스 경도 예측 대회에서 4등을 차지했습니다. 점수 공식이 MedAE인 점을 이용해 독특한 후처리 기법을 사용했습니다.",
+      whatIDid: ["ML 모델 개발"],
+      techStacks: ["Python", "Scikit-learn", "Pandas"],
+    },
+    {
       name: "2023 Creative Space G A.I. & IoT Makerthon: 🥈 2등",
       startedAt: new Date("2023-10"),
       endedAt: new Date("2023-11"),
