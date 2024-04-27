@@ -29,7 +29,7 @@ const data = {
       startedAt: new Date("2023-10"),
       endedAt: new Date("2023-11"),
       description:
-        "메이커톤에서 GPT-4 API와 라즈베리파이를 결합해 일상 대화에서 의미를 추론해 스위치, 스피커 등 IoT 기기 조작하는 AI 비서를 개발했습니다.",
+        "메이커톤에서 GPT-4 API와 라즈베리파이를 결합해 일상 대화에서 의미를 추론하고 스위치, 스피커 등 IoT 기기를 조작하는 AI 비서를 개발했습니다.",
       whatIDid: ["OpenAI API 연동", "기획 및 발표자료 준비"],
       techStacks: ["Python"],
     },

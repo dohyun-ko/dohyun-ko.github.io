@@ -109,6 +109,32 @@ const data = {
         },
       ],
     },
+    {
+      name: "GPERI",
+      color: "#4c568f",
+      url: "https://sites.google.com/view/gperigist",
+      job: "연구부원",
+      startedAt: new Date("2023-07"),
+      endedAt: new Date("2024-3"),
+      projects: [
+        {
+          name: "C언어 교육 진행",
+          startedAt: new Date("2023-07"),
+          endedAt: new Date("2023-08"),
+          description: "부원들에게 C언어 교육을 진행했습니다.",
+          whatIDid: ["C언어 교육 진행"],
+          techStacks: ["C"],
+        },
+        {
+          name: "발사체 통신 개발",
+          startedAt: new Date("2023-07"),
+          endedAt: new Date("2023-11"),
+          description: "발사체 통신 개발을 시도했지만 성공하지는 못했습니다.",
+          whatIDid: ["Flight Software 개발", "통신 시스템 개발"],
+          techStacks: ["C", "Zigbee"],
+        },
+      ],
+    },
   ],
 };
 

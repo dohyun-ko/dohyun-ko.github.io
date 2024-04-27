@@ -1,10 +1,13 @@
 import Font from "@/types/Font";
+import Organization from "@/types/Organization";
 import { Area, Content, Flex, Spacer, Text } from "@dohyun-ko/react-atoms";
 import OrganizationCard from "../components/OrganizationCard";
 
 interface CurrentPageProps {}
 
-const data = {
+const data: {
+  organizations: Organization[];
+} = {
   organizations: [
     {
       name: "GIST Data Science Lab",
@@ -18,7 +21,7 @@ const data = {
           url: "https://o2arc.com/",
           startedAt: new Date("2024-01"),
           description:
-            "[ARC](https://github.com/fchollet/ARC) 문제의 사람 풀이 데이터 수집을 위한 툴 O2ARC의 3.0 버전을 개발했고 유지보수 중입니다.",
+            "[ARC](https://github.com/fchollet/ARC) 문제의 사람 풀이 데이터 수집을 위한 툴 O2ARC의 3.0 버전을 개발했고 유지보수 중입니다. 개발과 데이터 분석 내용으로 demo 논문을 작성했고 IJCAI 2024에 투고했습니다.",
           whatIDid: ["프론트엔드 개발", "UX 디자인"],
           techStacks: ["React", "TypeScript", "Tailwind CSS"],
         },
@@ -35,9 +38,10 @@ const data = {
           name: "Introductory RL Study",
           url: "https://www.coursera.org/specializations/reinforcement-learning",
           startedAt: new Date("2024-01"),
+          endedAt: new Date("2024-02"),
           description:
-            "Coursera의 강화학습 스페셜리제이션을 통해 강화학습 기초를 공부하고 있습니다.",
-          whatIDid: ["강화학습 기초 공부"],
+            "Coursera의 강화학습 스페셜리제이션을 통해 강화학습 기초를 공부했습니다.",
+          whatIDid: ["강화학습 기초 공부(~Q-Learning)"],
         },
       ],
     },
@@ -66,6 +70,15 @@ const data = {
           whatIDid: ["프론트엔드 개발"],
           techStacks: ["React", "TypeScript", "Next.js", "Tailwind CSS"],
         },
+        {
+          name: "IdP 프론트엔드",
+          url: "https://idp.gistory.me",
+          startedAt: new Date("2024-03"),
+          description:
+            "GIST에서 사용하는 OAuth2.0 인증 시스템 IdP의 프론트엔드를 유지보수하고 있습니다.",
+          whatIDid: ["프론트엔드 유지보수"],
+          techStacks: ["React", "TypeScript", "Tailwind CSS"],
+        },
       ],
     },
     {
@@ -79,32 +92,11 @@ const data = {
           name: "Wing Session",
           startedAt: new Date("2023-03"),
           description: "Wing에서 개발 상황 교류 및 세션을 진행합니다.",
-          whatIDid: ["모노레포에 도입기 세션 진행", "React.cpp 세션 진행"],
-        },
-      ],
-    },
-    {
-      name: "GPERI",
-      color: "#4c568f",
-      url: "https://sites.google.com/view/gperigist",
-      job: "연구부원",
-      startedAt: new Date("2023-07"),
-      projects: [
-        {
-          name: "C언어 교육 진행",
-          startedAt: new Date("2023-07"),
-          endedAt: new Date("2023-08"),
-          description: "부원들에게 C언어 교육을 진행합니다.",
-          whatIDid: ["C언어 교육 진행"],
-          techStacks: ["C"],
-        },
-        {
-          name: "발사체 통신 개발",
-          startedAt: new Date("2023-07"),
-          endedAt: new Date("2023-11"),
-          description: "발사체 통신 개발을 시도했지만 성공하지는 못했습니다.",
-          whatIDid: ["Flight Software 개발", "통신 시스템 개발"],
-          techStacks: ["C", "Zigbee"],
+          whatIDid: [
+            "모노레포에 도입기 세션 진행",
+            "React.cpp 세션 진행",
+            "UI 라이브러리처럼 코드 짜기: Compound Components 세션 진행",
+          ],
         },
       ],
     },

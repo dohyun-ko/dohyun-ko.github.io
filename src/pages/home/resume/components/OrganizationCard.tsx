@@ -13,7 +13,7 @@ const OrganizationCard = ({ organization }: OrganizationCardProps) => {
   const { name, color, url, job, startedAt, endedAt } = organization;
 
   return (
-    <Flex gap={"20px"} alignItems="start">
+    <Flex gap={"40px"} alignItems="start">
       <Flex
         flexDirection="column"
         width={"280px"}
@@ -36,15 +36,7 @@ const OrganizationCard = ({ organization }: OrganizationCardProps) => {
         </Text>
       </Flex>
 
-      <div
-        style={{
-          height: "100%",
-          width: "1px",
-          backgroundColor: "black",
-        }}
-      />
-
-      <Flex flexDirection="column" gap={"20px"}>
+      <Flex flexDirection="column" gap={"20px"} width={"calc(100% - 335px)"}>
         {organization.projects.map((project) => (
           <ProjectCard key={project.name} project={project} />
         ))}
