@@ -32,7 +32,7 @@ const OrganizationCard = ({ organization }: OrganizationCardProps) => {
 
         <Text>
           {formatYearMonth(new Date(startedAt))} ~{" "}
-          {endedAt ? formatYearMonth(new Date(endedAt)) : "현재"}
+          {endedAt ? formatYearMonth(new Date(endedAt)) : "Now"}
         </Text>
       </Flex>
 

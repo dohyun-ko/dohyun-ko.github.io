@@ -1,3 +1,5 @@
 export const formatYearMonth = (date: Date) => {
-  return `${date.getFullYear()}. ${date.getMonth() + 1}`;
+  const [year, month] = date.toISOString().split("T")[0].split("-");
+
+  return `${year}. ${month}`;
 };

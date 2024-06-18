@@ -240,7 +240,7 @@ export const main = {
         url: "https://sites.google.com/view/gperigist",
         job: "Research Member",
         startedAt: "2023-07",
-        endedAt: "2024-3",
+        endedAt: "2024-03",
         projects: [
           {
             name: "C Language Education",
@@ -271,8 +271,8 @@ export const main = {
       {
         name: "2024 KPMG Ideathon: 🥉 3rd place",
         url: "https://github.com/gist-optima",
-        startedAt: "2024-1",
-        endedAt: "2024-2",
+        startedAt: "2024-01",
+        endedAt: "2024-02",
         description:
           "Participated in the [Samjong KPMG Ideathon](https://kpmgkr.notion.site/kpmgkr/2024-KPMG-1fcd8a808f3d4f36a5ae8ad6e9bc413e) and developed Docuflow, a platform implementing VCS for document work and streamlined-ai-search using LLM.",
         whatIDid: ["Frontend development"],
