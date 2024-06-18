@@ -5,8 +5,8 @@ interface Organization {
   color?: string;
   url: string;
   job: string;
-  startedAt: Date;
-  endedAt?: Date;
+  startedAt: string;
+  endedAt?: string;
   projects: Project[];
 }
 

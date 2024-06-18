@@ -11,18 +11,19 @@ const resources = {
 } as const;
 
 i18next
-  .use(LanguageDetector)
   .use(initReactI18next)
+  .use(LanguageDetector)
   .init({
     resources,
-    lng: "ko-KR",
     fallbackLng: {
-      "en-US": ["en-US"],
-      default: ["ko-KR"],
+      default: ["en-US"],
+      "ko-KR": ["ko-KR"],
     },
     interpolation: {
       escapeValue: false,
     },
+    ns: ["main"],
+    defaultNS: "main",
   });
 
 export default i18next;

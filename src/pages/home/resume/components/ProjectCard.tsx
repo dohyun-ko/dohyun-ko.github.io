@@ -22,8 +22,8 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
       </StylessA>
 
       <Text>
-        {formatYearMonth(startedAt)} ~{" "}
-        {endedAt ? formatYearMonth(endedAt) : "현재"}
+        {formatYearMonth(new Date(startedAt))} ~{" "}
+        {endedAt ? formatYearMonth(new Date(endedAt)) : "현재"}
       </Text>
 
       <Spacer height={"10px"} />

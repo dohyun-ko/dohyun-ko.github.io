@@ -1,8 +1,8 @@
 interface Project {
   name: string;
   url?: string;
-  startedAt: Date;
-  endedAt?: Date;
+  startedAt: string;
+  endedAt?: string;
   description: string;
   whatIDid: string[];
   techStacks?: string[];

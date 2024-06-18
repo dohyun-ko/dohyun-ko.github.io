@@ -1,52 +1,7 @@
 import Font from "@/types/Font";
 import { Area, Content, Grid, Spacer, Text } from "@dohyun-ko/react-atoms";
+import { useTranslation } from "react-i18next";
 import SectionTitle from "../components/SectionTitle";
-
-const data = {
-  skills: [
-    {
-      name: "React",
-      level: 5,
-    },
-    {
-      name: "TypeScript",
-      level: 4,
-    },
-    {
-      name: "JavaScript",
-      level: 4,
-    },
-    {
-      name: "HTML/CSS",
-      level: 3,
-    },
-    {
-      name: "Python",
-      level: 3,
-    },
-    {
-      name: "Flutter",
-      level: 2,
-    },
-
-    {
-      name: "C++",
-      level: 2,
-    },
-    {
-      name: "Kotlin",
-      level: 1,
-    },
-    {
-      name: "Docker",
-      level: 1,
-    },
-    {
-      name: "Rust",
-      level: 1,
-    },
-  ],
-};
 
 const mapFont = (level: number): Font => {
   switch (level) {
@@ -68,6 +23,8 @@ const mapFont = (level: number): Font => {
 interface SkillSectionProps {}
 
 const SkillSection = ({}: SkillSectionProps) => {
+  const { t } = useTranslation();
+
   return (
     <Area id="skill-section">
       <Content>
@@ -76,7 +33,12 @@ const SkillSection = ({}: SkillSectionProps) => {
         <Spacer height={"30px"} />
 
         <Grid gridTemplateColumns="1fr 1fr 1fr" gap={"10px"}>
-          {data.skills.map((skill) => (
+          {(
+            t("skill.skills", { returnObjects: true }) as {
+              name: string;
+              level: number;
+            }[]
+          ).map((skill) => (
             <Text key={skill.name} font={mapFont(skill.level)}>
               {skill.name}
             </Text>
