@@ -1,3 +1,5 @@
+import useIsMobile from "@/hooks/useIsMobile";
+import useResponsiveFont from "@/hooks/useResponsiveFont";
 import Font from "@/types/Font";
 import Project from "@/types/Project";
 import { formatYearMonth } from "@/utils/dateFormats";
@@ -12,11 +14,13 @@ interface ProjectCardProps {
 const ProjectCard = ({ project }: ProjectCardProps) => {
   const { name, url, description, whatIDid, techStacks, startedAt, endedAt } =
     project;
+  const { font } = useResponsiveFont();
+  const isMobile = useIsMobile();
 
   return (
     <Flex flexDirection="column">
       <StylessA href={url}>
-        <Text font={Font.SemiBold} size={"1.75rem"}>
+        <Text font={Font.SemiBold} size={font(1.75)}>
           {name}
         </Text>
       </StylessA>
@@ -28,14 +32,14 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
 
       <Spacer height={"10px"} />
 
-      <Text font={Font.Medium} size={"1.25rem"}>
+      <Text font={Font.Medium} size={font(1.25)}>
         Description
       </Text>
       <ReactMarkdown>{description}</ReactMarkdown>
 
-      <Spacer height={"10px"} />
+      {isMobile || <Spacer height={"10px"} />}
 
-      <Text font={Font.Medium} size={"1.25rem"}>
+      <Text font={Font.Medium} size={font(1.25)}>
         What I did
       </Text>
       <ul
@@ -54,7 +58,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
 
       {techStacks && techStacks.length > 0 && (
         <>
-          <Text font={Font.Medium} size={"1.25rem"}>
+          <Text font={Font.Medium} size={font(1.25)}>
             What I used
           </Text>
 

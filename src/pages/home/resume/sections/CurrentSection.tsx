@@ -1,8 +1,8 @@
-import Font from "@/types/Font";
 import Organization from "@/types/Organization";
-import { Area, Content, Flex, Spacer, Text } from "@dohyun-ko/react-atoms";
+import { Area, Content, Flex, Spacer } from "@dohyun-ko/react-atoms";
 import { useTranslation } from "react-i18next";
 import OrganizationCard from "../components/OrganizationCard";
+import SectionTitle from "../components/SectionTitle";
 
 interface CurrentPageProps {}
 
@@ -12,11 +12,9 @@ const CurrentSection = ({}: CurrentPageProps) => {
   return (
     <Area id="current-section">
       <Content>
-        <Text as="h1" font={Font.Bold} size={"2.5rem"}>
-          Currently working in
-        </Text>
+        <SectionTitle>Currently working in</SectionTitle>
 
-        <Spacer height={"50px"} />
+        <Spacer height={"30px"} />
 
         <Flex flexDirection="column" gap={"35px"}>
           {(

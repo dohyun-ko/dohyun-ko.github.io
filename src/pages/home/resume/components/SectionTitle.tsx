@@ -1,3 +1,4 @@
+import useResponsiveFont from "@/hooks/useResponsiveFont";
 import Font from "@/types/Font";
 import { Text } from "@dohyun-ko/react-atoms";
 
@@ -6,8 +7,10 @@ interface SectionTitleProps {
 }
 
 const SectionTitle = ({ children }: SectionTitleProps) => {
+  const { font } = useResponsiveFont();
+
   return (
-    <Text as="h1" font={Font.Bold} size={"2.5rem"}>
+    <Text as="h1" font={Font.Bold} size={font(2.5)}>
       {children}
     </Text>
   );

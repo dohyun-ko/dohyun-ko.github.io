@@ -1,7 +1,9 @@
+import useResponsiveFont from "@/hooks/useResponsiveFont";
 import Font from "@/types/Font";
 import Organization from "@/types/Organization";
 import { formatYearMonth } from "@/utils/dateFormats";
 import { Flex, Text } from "@dohyun-ko/react-atoms";
+import Card from "./Card";
 import ProjectCard from "./ProjectCard";
 import StylessA from "./StylessA";
 
@@ -11,19 +13,19 @@ interface OrganizationCardProps {
 
 const OrganizationCard = ({ organization }: OrganizationCardProps) => {
   const { name, color, url, job, startedAt, endedAt } = organization;
+  const { font } = useResponsiveFont();
 
   return (
-    <Flex gap={"40px"} alignItems="start">
+    <Card>
       <Flex
         flexDirection="column"
-        width={"280px"}
         style={{
           borderLeft: `5px solid ${color || "gray"}`,
           paddingLeft: "10px",
         }}
       >
         <StylessA href={url}>
-          <Text font={Font.Bold} size={"2rem"}>
+          <Text font={Font.Bold} size={font(2)}>
             {name}
           </Text>
         </StylessA>
@@ -36,12 +38,12 @@ const OrganizationCard = ({ organization }: OrganizationCardProps) => {
         </Text>
       </Flex>
 
-      <Flex flexDirection="column" gap={"20px"} width={"calc(100% - 335px)"}>
+      <Flex flexDirection="column" gap={"20px"}>
         {organization.projects.map((project) => (
           <ProjectCard key={project.name} project={project} />
         ))}
       </Flex>
-    </Flex>
+    </Card>
   );
 };
 

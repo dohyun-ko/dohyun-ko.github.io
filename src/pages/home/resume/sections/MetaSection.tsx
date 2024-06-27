@@ -9,7 +9,7 @@ const MetaSection = ({}: MetaSectionProps) => {
       <Content>
         <Flex>
           <Text font={Font.Thin} size={"1.25rem"}>
-            Last update: 2024-06-18
+            Last update: 2024-06-27
           </Text>
         </Flex>
       </Content>
