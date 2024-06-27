@@ -1,7 +1,7 @@
 export const main = {
   title: "개발자 고도현 | Dohyun Ko",
   introduction:
-    "2년차 프론트엔드 개발자로, 유지보수하기 쉬운 코드를 짜기 위해 노력합니다. 스타트업에서 일하며 프론트엔드, 백엔드, 인프라, AI 등 다양한 경험을 쌓았고, 현재 AI 연구실에서 인턴으로 일하고 있습니다. 가지 않은 길'을 가는 것을 목표로 언제나 다양한 도전을 합니다.",
+    "3년차 프론트엔드 개발자로, 유지보수하기 쉬운 코드를 짜기 위해 노력합니다. 스타트업에서 일하며 프론트엔드, 백엔드, 인프라, AI 등 다양한 경험을 쌓았고, AI 연구실에서 인턴으로 일했습니다. 현재 UC Berkeley에서 여름학기를 보내고 있습니다. 가지 않은 길'을 가는 것을 목표로 언제나 다양한 도전을 합니다.",
   current: {
     organizations: [
       {
@@ -72,6 +72,8 @@ export const main = {
       "컴퓨터 그래픽스",
       "컴퓨터 네트워킹",
       "기계학습 및 딥러닝",
+      "Computer Security",
+      "Computational Models of Cognition",
     ],
     attendedLecture: "수강 강좌",
     major: "전기전자컴퓨터공학부",

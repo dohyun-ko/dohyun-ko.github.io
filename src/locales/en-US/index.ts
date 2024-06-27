@@ -1,7 +1,7 @@
 export const main = {
   title: "Developer Dohyun Ko | 고도현",
   introduction:
-    "As a frontend developer with 2 years of experience, I strive to write maintainable code. I've worked in a startup, gaining diverse experience in frontend, backend, infrastructure, and AI. Currently, I am interning at an AI research lab. My goal is to 'take the road not taken,' always embracing various challenges.",
+    "As a third-year frontend developer, I strive to write maintainable code. Working at a startup, I gained diverse experience in frontend, backend, infrastructure, and AI, and I have also interned at an AI research lab. I am currently spending the summer session at UC Berkeley. My goal is to 'take the road not taken,' always embracing various challenges.",
   current: {
     organizations: [
       {
@@ -73,6 +73,8 @@ export const main = {
       "Computer Graphics",
       "Computer Networking",
       "Machine Learning and Deep Learning",
+      "Computer Security",
+      "Computational Models of Cognition",
     ],
     attendedLecture: "Attended Courses",
     major: "Electrical Engineering and Computer Science",
