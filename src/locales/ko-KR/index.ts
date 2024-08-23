@@ -1,18 +1,20 @@
 export const main = {
   title: { developer: "개발자", name: "고도현 | Dohyun Ko" },
   introduction:
-    "3년차 프론트엔드 개발자로, 유지보수하기 쉬운 코드를 짜기 위해 노력합니다. 스타트업에서 일하며 프론트엔드, 백엔드, 인프라, AI 등 다양한 경험을 쌓았고, AI 연구실에서 인턴으로 일했습니다. 현재 UC Berkeley에서 여름학기를 보내고 있습니다. 가지 않은 길'을 가는 것을 목표로 언제나 다양한 도전을 합니다.",
+    "3년차 프론트엔드 개발자로, 유지보수하기 쉬운 코드를 짜기 위해 노력합니다. 스타트업에서 일하며 프론트엔드, 백엔드, 인프라, AI 등 다양한 경험을 쌓았고, AI 연구실에서 인턴으로 일했습니다. 가지 않은 길'을 가는 것을 목표로 언제나 새로운 시도를 합니다.",
   current: {
     organizations: [
       {
         name: "GIST 학생회 정보국",
+        isImportant: true,
         color: "#EB6263",
         url: "https://introduce.gistory.me/",
-        job: "정보국원",
+        job: "팀장",
         startedAt: "2022-09",
         projects: [
           {
             name: "AMS 프론트엔드",
+            isImportant: false,
             startedAt: "2022-11",
             endedAt: "2023-02",
             description:
@@ -22,15 +24,17 @@ export const main = {
           },
           {
             name: "Ziggle 프론트엔드",
+            isImportant: true,
             url: "https://github.com/gsainfoteam/ziggle-fe",
             startedAt: "2023-04",
             description:
-              "GIST 공지 통합 시스템인 Ziggle의 프론트엔드를 개발하고 있습니다.",
-            whatIDid: ["프론트엔드 개발"],
+              "GIST 통합 공지 플랫폼인 Ziggle의 프론트엔드를 개발하고 있습니다.",
+            whatIDid: ["팀장 및 프론트엔드 개발"],
             techStacks: ["React", "TypeScript", "Next.js", "Tailwind CSS"],
           },
           {
             name: "IdP 프론트엔드",
+            isImportant: true,
             url: "https://idp.gistory.me",
             startedAt: "2024-03",
             description:
@@ -42,6 +46,7 @@ export const main = {
       },
       {
         name: "Wing: GIST 전산 동아리",
+        isImportant: false,
         color: "rgb(151, 123, 242)",
         url: "https://wing-homepage.vercel.app/",
         job: "시니어 부원",
@@ -49,6 +54,7 @@ export const main = {
         projects: [
           {
             name: "Wing Session",
+            isImportant: true,
             startedAt: "2023-03",
             description: "Wing에서 개발 상황 교류 및 세션을 진행합니다.",
             whatIDid: [
@@ -82,6 +88,7 @@ export const main = {
     experiences: [
       {
         name: "GIST Data Science Lab",
+        isImportant: true,
         color: "#b509ac",
         url: "https://sundong.kim/members/",
         job: "인턴",
@@ -90,12 +97,17 @@ export const main = {
         projects: [
           {
             name: "O2ARC 3.0",
+            isImportant: true,
             url: "https://o2arc.com/",
             startedAt: "2024-01",
             endedAt: "2024-05",
             description:
               "[ARC](https://github.com/fchollet/ARC) 문제의 사람 풀이 데이터 수집을 위한 툴 O2ARC의 3.0 버전을 개발했고 유지보수 했습니다. 개발과 데이터 분석 내용으로 demo 논문을 작성했고 IJCAI 2024에 투고했습니다.",
-            whatIDid: ["프론트엔드 개발", "백엔드 개발", "UX 디자인"],
+            whatIDid: [
+              "전체적인 프론트엔드 UI 및 그리드 조작 로직 개발",
+              "이벤트 관련 백엔드 API 개발",
+              "수집 데이터 품질 개선을 위한 UX 디자인 및 유저 데이터 수집",
+            ],
             techStacks: [
               "React",
               "TypeScript",
@@ -107,6 +119,7 @@ export const main = {
           },
           {
             name: "Introductory RL Study",
+            isImportant: false,
             url: "https://www.coursera.org/specializations/reinforcement-learning",
             startedAt: "2024-01",
             endedAt: "2024-02",
@@ -117,7 +130,8 @@ export const main = {
         ],
       },
       {
-        name: "시고르자브종",
+        name: "Sigor Inc.",
+        isImportant: true,
         color: "#FEAA17",
         url: "https://introduce.sigor.company/",
         job: "웹 개발자",
@@ -126,12 +140,17 @@ export const main = {
         projects: [
           {
             name: "도글리 프론트엔드",
+            isImportant: true,
             url: "https://doggly.co.kr/",
             startedAt: "2022-08",
             endedAt: "2023-03",
             description:
-              "강아지 의류 쇼핑몰인 도글리의 프론트엔드를 개발했습니다.",
-            whatIDid: ["도글리 프론트엔드 개발"],
+              "AI 기반으로 강아지 사이즈를 측정하는 강아지 의류 쇼핑몰인 도글리의 프론트엔드를 개발했습니다.",
+            whatIDid: [
+              "쇼핑몰의 전체적인 프론트엔드 개발 및 유지보수",
+              "Android & iOS 웹뷰 앱 개발 및 결제 모듈 연동",
+              "퍼널 개선을 위한 A/B 테스팅",
+            ],
             techStacks: [
               "React",
               "TypeScript",
@@ -142,6 +161,7 @@ export const main = {
           },
           {
             name: "러시아워 프론트엔드",
+            isImportant: true,
             url: "https://introduce.rushhourkorea.com/",
             startedAt: "2023-05",
             endedAt: "2023-07",
@@ -155,6 +175,7 @@ export const main = {
           },
           {
             name: "러시아워 앱",
+            isImportant: true,
             url: "https://introduce.rushhourkorea.com/",
             startedAt: "2023-07",
             endedAt: "2023-10",
@@ -165,6 +186,7 @@ export const main = {
           },
           {
             name: "러시아워 AI",
+            isImportant: true,
             startedAt: "2023-09",
             endedAt: "2023-12",
 
@@ -177,16 +199,16 @@ export const main = {
           },
           {
             name: "기타",
+            isImportant: true,
             startedAt: "2022-02",
             endedAt: "2023-12",
             description:
-              "스타트업의 개발자로서 다양한 개발 업무를 수행하고 있습니다.",
+              "스타트업의 개발자로서 다양한 개발 업무를 수행했습니다.",
             whatIDid: [
-              "랜딩 페이지 개발",
-              "관리자 페이지 개발",
-              "간단한 백엔드 API 개발",
+              "랜딩 페이지 및 관리자 페이지 개발",
               "유저 로그 분석 및 통계",
               "업무 자동화",
+              "생산성 향상을 위한 모노레포 통합",
             ],
             techStacks: [
               "React",
@@ -203,6 +225,7 @@ export const main = {
       },
       {
         name: "GDSC-GIST",
+        isImportant: false,
         color: "#008cff",
         url: "https://gdsc.community.dev/gwangju-institute-of-science-and-technology/",
         job: "2nd Core, Tech Team",
@@ -211,6 +234,7 @@ export const main = {
         projects: [
           {
             name: "스터디",
+            isImportant: false,
             startedAt: "2022-11",
             endedAt: "2023-05",
             description: "GDSC에서 진행한 내부 개발 스터디입니다.",
@@ -218,6 +242,7 @@ export const main = {
           },
           {
             name: "GIST Mini Solution Challenge",
+            isImportant: false,
             url: "https://gdsc.community.dev/events/details/developer-student-clubs-gwangju-institute-of-science-and-technology-presents-gist-mini-solution-challenge/",
             startedAt: "2023-04",
             endedAt: "2023-04",
@@ -229,6 +254,7 @@ export const main = {
       },
       {
         name: "GPERI",
+        isImportant: false,
         color: "#4c568f",
         url: "https://sites.google.com/view/gperigist",
         job: "연구부원",
@@ -237,6 +263,7 @@ export const main = {
         projects: [
           {
             name: "C언어 교육 진행",
+            isImportant: false,
             startedAt: "2023-07",
             endedAt: "2023-08",
             description: "부원들에게 C언어 교육을 진행했습니다.",
@@ -245,6 +272,7 @@ export const main = {
           },
           {
             name: "발사체 통신 개발",
+            isImportant: false,
             startedAt: "2023-07",
             endedAt: "2023-11",
             description: "발사체 통신 개발을 시도했지만 성공하지는 못했습니다.",
@@ -259,6 +287,7 @@ export const main = {
     sideProjects: [
       {
         name: "2024 KPMG Ideathon: 🥉 3등",
+        isImportant: true,
         url: "https://github.com/gist-optima",
         startedAt: "2024-1",
         endedAt: "2024-2",
@@ -269,6 +298,7 @@ export const main = {
       },
       {
         name: "Kaggle - Regression with a Mohs Hardness Dataset: 4등",
+        isImportant: true,
         url: "https://www.kaggle.com/competitions/playground-series-s3e25",
         startedAt: "2023-10",
         endedAt: "2023-12",
@@ -279,6 +309,7 @@ export const main = {
       },
       {
         name: "2023 Creative Space G A.I. & IoT Makerthon: 🥈 2등",
+        isImportant: false,
         startedAt: "2023-10",
         endedAt: "2023-11",
         description:
@@ -288,6 +319,7 @@ export const main = {
       },
       {
         name: "2023 Net Challenge: 🥈 은상",
+        isImportant: true,
         url: "https://github.com/Net-Challenge-InfoTeam",
         startedAt: "2023-06",
         endedAt: "2023-12",
@@ -301,6 +333,7 @@ export const main = {
       },
       {
         name: "React-Atoms: React Component Library",
+        isImportant: false,
         url: "https://github.com/dohyun-ko/react-atoms",
         startedAt: "2023-07",
         endedAt: "2023-07",
@@ -315,6 +348,7 @@ export const main = {
       },
       {
         name: "Dutch: OOP Final Project",
+        isImportant: false,
         url: "https://github.com/dohyun-ko/dutch-wasm",
         startedAt: "2023-04",
         endedAt: "2023-06",
@@ -328,6 +362,7 @@ export const main = {
       },
       {
         name: "Speaking Melona: 편의점 음식이 서로 대화를 해요",
+        isImportant: false,
         url: "https://melona.chat",
         startedAt: "2024-05",
         endedAt: "2024-05",

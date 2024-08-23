@@ -1,11 +1,12 @@
 export const main = {
   title: { developer: "Developer", name: "Dohyun Ko | 고도현" },
   introduction:
-    "As a third-year frontend developer, I strive to write maintainable code. Working at a startup, I gained diverse experience in frontend, backend, infrastructure, and AI, and I have also interned at an AI research lab. I am currently spending the summer session at UC Berkeley. My goal is to 'take the road not taken,' always embracing various challenges.",
+    "As a third-year frontend developer, I strive to write maintainable code. Working at a startup, I gained diverse experience in frontend, backend, infrastructure, and AI, and I have also interned at an AI research lab.  My goal is to 'take the road not taken,' always embracing various challenges.",
   current: {
     organizations: [
       {
         name: "GIST Student Association Infoteam",
+        isImportant: true,
         color: "#EB6263",
         url: "https://introduce.gistory.me/",
         job: "Information Member and Leader for 2024-second half",
@@ -13,6 +14,7 @@ export const main = {
         projects: [
           {
             name: "AMS Frontend",
+            isImportant: false,
             startedAt: "2022-11",
             endedAt: "2023-02",
             description:
@@ -22,15 +24,17 @@ export const main = {
           },
           {
             name: "Ziggle Frontend",
+            isImportant: true,
             url: "https://github.com/gsainfoteam/ziggle-fe",
             startedAt: "2023-04",
             description:
-              "Developing the frontend of Ziggle, GIST's integrated notification system.",
-            whatIDid: ["Frontend development"],
+              "Developing the frontend of Ziggle, GIST's integrated notification platform.",
+            whatIDid: ["Lead and Frontend development"],
             techStacks: ["React", "TypeScript", "Next.js", "Tailwind CSS"],
           },
           {
             name: "IdP Frontend",
+            isImportant: true,
             url: "https://idp.gistory.me",
             startedAt: "2024-03",
             description:
@@ -42,6 +46,7 @@ export const main = {
       },
       {
         name: "Wing: GIST CS Club",
+        isImportant: false,
         color: "rgb(151, 123, 242)",
         url: "https://wing-homepage.vercel.app/",
         job: "Senior Member",
@@ -49,6 +54,7 @@ export const main = {
         projects: [
           {
             name: "Wing Session",
+            isImportant: true,
             startedAt: "2023-03",
             description:
               "Conducting development exchanges and sessions at Wing.",
@@ -83,6 +89,7 @@ export const main = {
     experiences: [
       {
         name: "GIST Data Science Lab",
+        isImportant: true,
         color: "#b509ac",
         url: "https://sundong.kim/members/",
         job: "Intern",
@@ -91,15 +98,16 @@ export const main = {
         projects: [
           {
             name: "O2ARC 3.0",
+            isImportant: true,
             url: "https://o2arc.com/",
             startedAt: "2024-01",
             endedAt: "2024-05",
             description:
               "Developed and maintained version 3.0 of O2ARC, a tool for collecting human solutions data for ARC problems. Authored a demo paper on the development and data analysis, which was submitted to IJCAI 2024.",
             whatIDid: [
-              "Frontend development",
-              "Backend development",
-              "UX design",
+              "Overall frontend and the grid manipulation logic development",
+              "Backend API development",
+              "UX design to enhance the quality of collected user data",
             ],
             techStacks: [
               "React",
@@ -112,6 +120,7 @@ export const main = {
           },
           {
             name: "Introductory RL Study",
+            isImportant: false,
             url: "https://www.coursera.org/specializations/reinforcement-learning",
             startedAt: "2024-01",
             endedAt: "2024-02",
@@ -125,6 +134,7 @@ export const main = {
       },
       {
         name: "Sigor Inc.",
+        isImportant: true,
         color: "#FEAA17",
         url: "https://introduce.sigor.company/",
         job: "Web Developer",
@@ -137,8 +147,12 @@ export const main = {
             startedAt: "2022-08",
             endedAt: "2023-03",
             description:
-              "Developed the frontend for Doggly, a pet clothing shopping mall.",
-            whatIDid: ["Developed Doggly frontend"],
+              "Developed the frontend for Doggly, a pet clothing shopping mall which provides AI-based size measurement.",
+            whatIDid: [
+              "Overall frontend development and maintenance",
+              "Developed Doggly android & iOS webview app and integrated payment module",
+              "A/B testing for funnel improvement",
+            ],
             techStacks: [
               "React",
               "TypeScript",
@@ -149,6 +163,7 @@ export const main = {
           },
           {
             name: "Rushhour Frontend",
+            isImportant: true,
             url: "https://introduce.rushhourkorea.com/",
             startedAt: "2023-05",
             endedAt: "2023-07",
@@ -162,6 +177,7 @@ export const main = {
           },
           {
             name: "Rushhour App",
+            isImportant: true,
             url: "https://introduce.rushhourkorea.com/",
             startedAt: "2023-07",
             endedAt: "2023-10",
@@ -175,6 +191,7 @@ export const main = {
           },
           {
             name: "Rushhour AI",
+            isImportant: true,
             startedAt: "2023-09",
             endedAt: "2023-12",
             description: "Participated in developing AI(ML) for Rushhour.",
@@ -186,16 +203,16 @@ export const main = {
           },
           {
             name: "Others",
+            isImportant: true,
             startedAt: "2022-02",
             endedAt: "2023-12",
             description:
               "Performed various development tasks as a developer in a startup.",
             whatIDid: [
-              "Developed landing pages",
-              "Developed admin pages",
-              "Developed simple backend APIs",
+              "Developed landing pages and admin pages",
               "Analyzed and collected user logs",
               "Automated tasks",
+              "Integrated into mono-repo for productivity improvement",
             ],
             techStacks: [
               "React",
@@ -212,6 +229,7 @@ export const main = {
       },
       {
         name: "GDSC-GIST",
+        isImportant: false,
         color: "#008cff",
         url: "https://gdsc.community.dev/gwangju-institute-of-science-and-technology/",
         job: "2nd-year Team Core, Tech Team",
@@ -220,6 +238,7 @@ export const main = {
         projects: [
           {
             name: "Study",
+            isImportant: false,
             startedAt: "2022-11",
             endedAt: "2023-05",
             description: "Internal development study conducted by GDSC.",
@@ -227,6 +246,7 @@ export const main = {
           },
           {
             name: "GIST Mini Solution Challenge",
+            isImportant: false,
             url: "https://gdsc.community.dev/events/details/developer-student-clubs-gwangju-institute-of-science-and-technology-presents-gist-mini-solution-challenge/",
             startedAt: "2023-04",
             endedAt: "2023-04",
@@ -238,6 +258,7 @@ export const main = {
       },
       {
         name: "GPERI",
+        isImportant: false,
         color: "#4c568f",
         url: "https://sites.google.com/view/gperigist",
         job: "Research Member",
@@ -246,6 +267,7 @@ export const main = {
         projects: [
           {
             name: "C Language Education",
+            isImportant: false,
             startedAt: "2023-07",
             endedAt: "2023-08",
             description: "Conducted C language education for members.",
@@ -254,6 +276,7 @@ export const main = {
           },
           {
             name: "Rocket Communication Development",
+            isImportant: false,
             startedAt: "2023-07",
             endedAt: "2023-11",
             description:
@@ -272,6 +295,7 @@ export const main = {
     sideProjects: [
       {
         name: "2024 KPMG Ideathon: 🥉 3rd place",
+        isImportant: true,
         url: "https://github.com/gist-optima",
         startedAt: "2024-01",
         endedAt: "2024-02",
@@ -282,6 +306,7 @@ export const main = {
       },
       {
         name: "Kaggle - Regression with a Mohs Hardness Dataset: 4th place",
+        isImportant: true,
         url: "https://www.kaggle.com/competitions/playground-series-s3e25",
         startedAt: "2023-10",
         endedAt: "2023-12",
@@ -292,6 +317,7 @@ export const main = {
       },
       {
         name: "2023 Creative Space G A.I. & IoT Makerthon: 🥈 2nd place",
+        isImportant: false,
         startedAt: "2023-10",
         endedAt: "2023-11",
         description:
@@ -304,6 +330,7 @@ export const main = {
       },
       {
         name: "2023 Net Challenge: 🥈 Silver Award",
+        isImportant: true,
         url: "https://github.com/Net-Challenge-InfoTeam",
         startedAt: "2023-06",
         endedAt: "2023-12",
@@ -317,6 +344,7 @@ export const main = {
       },
       {
         name: "React-Atoms: React Component Library",
+        isImportant: false,
         url: "https://github.com/dohyun-ko/react-atoms",
         startedAt: "2023-07",
         endedAt: "2023-07",
@@ -331,6 +359,7 @@ export const main = {
       },
       {
         name: "Dutch: OOP Final Project",
+        isImportant: false,
         url: "https://github.com/dohyun-ko/dutch-wasm",
         startedAt: "2023-04",
         endedAt: "2023-06",
@@ -343,7 +372,8 @@ export const main = {
         techStacks: ["C++", "WebAssembly", "Emscripten"],
       },
       {
-        name: "Speaking Melona: Convenience Store Foods Talk to Each Other",
+        name: "Speaking Melona: Convenience Store Foods Talking to Each Other",
+        isImportant: false,
         url: "https://melona.chat",
         startedAt: "2024-05",
         endedAt: "2024-05",

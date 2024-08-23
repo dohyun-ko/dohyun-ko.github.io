@@ -1,6 +1,7 @@
 import useResponsiveFont from "@/hooks/useResponsiveFont";
 import Font from "@/types/Font";
 import { Area, Content, Flex, Spacer, Text } from "@dohyun-ko/react-atoms";
+import React from "react";
 import { useTranslation } from "react-i18next";
 import Card from "../components/Card";
 import SectionTitle from "../components/SectionTitle";
@@ -50,11 +51,13 @@ const EducationSection = ({}: EducationSectionProps) => {
                   t("education.attendedLectures", {
                     returnObjects: true,
                   }) as string[]
-                ).map((item, index, array) =>
-                  index < array.length - 1
-                    ? [item, <span style={{ padding: "0 6px" }}>|</span>]
-                    : item
-                )}
+                ).map((item, index, array) => (
+                  <React.Fragment key={item}>
+                    {index < array.length - 1
+                      ? [item, <span style={{ padding: "0 6px" }}>|</span>]
+                      : item}
+                  </React.Fragment>
+                ))}
               </Text>
             </Flex>
           </Flex>

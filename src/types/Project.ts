@@ -1,5 +1,6 @@
 interface Project {
   name: string;
+  isImportant: boolean;
   url?: string;
   startedAt: string;
   endedAt?: string;
