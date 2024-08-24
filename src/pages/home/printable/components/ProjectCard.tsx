@@ -30,7 +30,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
         </Text>
       </StylessA>
 
-      <Text size={font(0.875)}>
+      <Text size={font(0.75)}>
         {formatYearMonth(new Date(startedAt))} ~{" "}
         {endedAt ? formatYearMonth(new Date(endedAt)) : "Now"}
       </Text>
