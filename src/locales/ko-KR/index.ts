@@ -333,7 +333,7 @@ export const main = {
       },
       {
         name: "React-Atoms: React Component Library",
-        isImportant: false,
+        isImportant: true,
         url: "https://github.com/dohyun-ko/react-atoms",
         startedAt: "2023-07",
         endedAt: "2023-07",
