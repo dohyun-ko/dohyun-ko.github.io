@@ -37,44 +37,26 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
       </Text>
       <ReactMarkdown>{description}</ReactMarkdown>
 
-      {isMobile || <Spacer height={"10px"} />}
-
-      <Text font={Font.Medium} size={font(1.25)}>
-        What I did
-      </Text>
       <ul
         style={{
           margin: "0px",
+          paddingLeft: "20px",
         }}
       >
         {whatIDid.map((whatIDid) => (
           <li key={whatIDid}>
-            <Text>{whatIDid}</Text>
+            <Text size={font(1)}>{whatIDid}</Text>
           </li>
         ))}
+
+        {techStacks && techStacks.length > 0 && (
+          <li>
+            <Text size={font(1)}>
+              사용 기술: {techStacks.map((techStack) => techStack).join(", ")}
+            </Text>
+          </li>
+        )}
       </ul>
-
-      <Spacer height={"10px"} />
-
-      {techStacks && techStacks.length > 0 && (
-        <>
-          <Text font={Font.Medium} size={font(1.25)}>
-            What I used
-          </Text>
-
-          <ul
-            style={{
-              margin: "0px",
-            }}
-          >
-            {techStacks.map((techStack) => (
-              <li key={techStack}>
-                <Text>{techStack}</Text>
-              </li>
-            ))}
-          </ul>
-        </>
-      )}
     </Flex>
   );
 };
