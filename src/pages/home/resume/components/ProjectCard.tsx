@@ -3,7 +3,7 @@ import useResponsiveFont from "@/hooks/useResponsiveFont";
 import Font from "@/types/Font";
 import Project from "@/types/Project";
 import { formatYearMonth } from "@/utils/dateFormats";
-import { Flex, Spacer, Text } from "@dohyun-ko/react-atoms";
+import { Flex, Text } from "@dohyun-ko/react-atoms";
 import ReactMarkdown from "react-markdown";
 import StylessA from "./StylessA";
 
@@ -30,11 +30,6 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
         {endedAt ? formatYearMonth(new Date(endedAt)) : "Now"}
       </Text>
 
-      <Spacer height={"10px"} />
-
-      <Text font={Font.Medium} size={font(1.25)}>
-        Description
-      </Text>
       <ReactMarkdown>{description}</ReactMarkdown>
 
       <ul

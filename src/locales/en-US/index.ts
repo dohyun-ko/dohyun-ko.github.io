@@ -85,6 +85,19 @@ export const main = {
     attendedLecture: "Attended Courses",
     major: "Electrical Engineering and Computer Science",
   },
+  publication: {
+    publications: [
+      {
+        name: "O2ARC 3.0: A Platform for Solving and Creating ARC Tasks",
+        date: "2024-08",
+        isImportant: true,
+        url: "https://www.ijcai.org/proceedings/2024/1034",
+        publisher: "IJCAI 2024",
+        description:
+          "To address the issue of insufficient human solution data for ARC problems and the unsuitability of the collected data for AI training, we developed O2ARC 3.0. This paper focuses on how we improved the quantity and quality of data collection by modifying the UI/UX of the existing tool.",
+      },
+    ],
+  },
   experience: {
     experiences: [
       {

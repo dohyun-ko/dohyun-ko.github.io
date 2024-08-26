@@ -84,6 +84,19 @@ export const main = {
     attendedLecture: "수강 강좌",
     major: "전기전자컴퓨터공학부",
   },
+  publication: {
+    publications: [
+      {
+        name: "O2ARC 3.0: A Platform for Solving and Creating ARC Tasks",
+        date: "2024-08",
+        isImportant: true,
+        url: "https://www.ijcai.org/proceedings/2024/1034",
+        publisher: "IJCAI 2024 | 공동 1저자",
+        description:
+          "ARC 문제의 사람 풀이 데이터가 부족하며, 수집된 데이터의 품질도 AI 학습에 적합하지 않다는 문제를 해결하기 위해 O2ARC 3.0을 개발했습니다. 기존 툴의 UI/UX를 어떻게 변경하여 데이터 수집 양과 품질을 높일 수 있었는지를 중점으로 설명합니다.",
+      },
+    ],
+  },
   experience: {
     experiences: [
       {

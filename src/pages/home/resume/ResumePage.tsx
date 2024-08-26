@@ -3,6 +3,7 @@ import CurrentSection from "./sections/CurrentSection";
 import EducationSection from "./sections/EducationSection";
 import ExperienceSection from "./sections/ExperienceSection";
 import MetaSection from "./sections/MetaSection";
+import PublicationSection from "./sections/PublicationSection";
 import SideProjectSection from "./sections/SideProjectSection";
 import SkillSection from "./sections/SkillSection";
 import TitleSection from "./sections/TitleSection";
@@ -27,6 +28,10 @@ const ResumePage = ({}: ResumePageProps) => {
       <Spacer height={"50px"} />
 
       <EducationSection />
+
+      <Spacer height={"50px"} />
+
+      <PublicationSection />
 
       <Spacer height={"50px"} />
 
