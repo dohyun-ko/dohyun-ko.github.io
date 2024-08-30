@@ -39,7 +39,7 @@ const experience = {
           endedAt: "2024-02",
           description:
             "Coursera의 강화학습 스페셜리제이션을 통해 강화학습 기초를 공부했습니다.",
-          whatIDid: ["강화학습 기초 공부(~Q-Learning)"],
+          whatIDid: ["강화학습 기초 공부(– Q-Learning)"],
         },
       ],
     },
