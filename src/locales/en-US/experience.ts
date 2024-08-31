@@ -39,7 +39,7 @@ const experience = {
           endedAt: "2024-02",
           description:
             "Studied the basics of reinforcement learning through Coursera's Reinforcement Learning Specialization.",
-          whatIDid: ["Studied basics of reinforcement learning (~Q-Learning)"],
+          whatIDid: ["Studied basics of reinforcement learning (–Q-Learning)"],
         },
       ],
     },

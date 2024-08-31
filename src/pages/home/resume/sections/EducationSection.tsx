@@ -33,7 +33,7 @@ const EducationSection = ({}: EducationSectionProps) => {
                   GIST
                 </Text>
                 <Text size={"1rem"}>{t("education.major")}</Text>
-                <Text size={"1rem"}>2022. 2 ~ </Text>
+                <Text size={"1rem"}>2022. 2 – </Text>
               </Flex>
             </Flex>
 

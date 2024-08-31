@@ -36,7 +36,7 @@ const EducationSection = ({}: EducationSectionProps) => {
         </Flex>
         <Flex flexDirection={"column"}>
           <Text size={font(1)}>TGPA 4.04 / 4.5</Text>
-          <Text size={font(0.75)}>2022. 2 ~ </Text>
+          <Text size={font(0.75)}>2022. 2 – </Text>
         </Flex>
 
         {/* <Flex flexDirection={"column"} width={"100%"} gap={"10px"}>

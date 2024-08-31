@@ -33,7 +33,7 @@ const OrganizationCard = ({ organization }: OrganizationCardProps) => {
         <Text size={font(0.75)}>{job}</Text>
 
         <Text size={font(0.75)}>
-          {formatYearMonth(new Date(startedAt))} ~{" "}
+          {formatYearMonth(new Date(startedAt))} –{" "}
           {endedAt ? formatYearMonth(new Date(endedAt)) : "Now"}
         </Text>
       </Flex>
