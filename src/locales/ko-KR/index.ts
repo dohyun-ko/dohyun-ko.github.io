@@ -43,8 +43,8 @@ export const main = {
         name: "2024 KPMG Ideathon: 🥉 3등",
         isImportant: true,
         url: "https://github.com/gist-optima",
-        startedAt: "2024-1",
-        endedAt: "2024-2",
+        startedAt: "2024-01",
+        endedAt: "2024-02",
         description:
           "[삼정 KPMG 아이디어톤](https://kpmgkr.notion.site/kpmgkr/2024-KPMG-1fcd8a808f3d4f36a5ae8ad6e9bc413e)에 참여해 문서 작업에 VCS를 도입하고 LLM을 이용한 streamlined-ai-search를 구현한 플랫폼 Docuflow를 개발했습니다. 비개발자도 VCS를 직관적으로 사용할 수 있도록 drag & drop을 적극 이용하였으며, 최대 1분까지 걸릴 수 있는 AI 응답을 기다릴 수 있는 UI를 중시했습니다.",
         whatIDid: ["프론트엔드 개발"],

@@ -43,8 +43,8 @@ export const main = {
         name: "2024 KPMG Ideathon: 🥉 3rd Place",
         isImportant: true,
         url: "https://github.com/gist-optima",
-        startedAt: "2024-1",
-        endedAt: "2024-2",
+        startedAt: "2024-01",
+        endedAt: "2024-02",
         description:
           "Participated in the [Samjong KPMG Ideathon](https://kpmgkr.notion.site/kpmgkr/2024-KPMG-1fcd8a808f3d4f36a5ae8ad6e9bc413e) and developed the platform Docuflow, which implemented VCS for document work and streamlined-ai-search using LLM. I focused on making VCS intuitive for non-developers through drag & drop and ensuring the UI accommodated AI responses that could take up to a minute.",
         whatIDid: ["Front-end Development"],
