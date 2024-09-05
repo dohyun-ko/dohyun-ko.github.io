@@ -16,10 +16,10 @@ const experience = {
           startedAt: "2024-01",
           endedAt: "2024-05",
           description:
-            "AI의 추론능력을 평가하는 벤치마크 Abstract and Resoning Corpus([ARC](https://github.com/fchollet/ARC))의 사람 풀이 데이터 수집을 위한 툴 O2ARC 3.0을 개발했습니다. 기존 툴에서 수집된 데이터는 학습에 쓰기 어려운 형태였으며, 이를 유저가 취할 수 있는 행동을 제한해 AI 학습에 유리한 형태의 데이터 1만개 이상을 수집하였습니다. IJCAI 2024에 공동 1저자로 논문을 게재하였습니다.",
+            "AI의 추론능력을 평가하는 벤치마크 Abstract and Reasoning Corpus([ARC](https://github.com/fchollet/ARC))의 사람 풀이 데이터 수집을 위한 툴 O2ARC 3.0을 개발했습니다. 기존 툴에서 수집된 데이터는 학습에 쓰기 어려운 형태였으며, 이를 유저가 취할 수 있는 행동을 제한해 AI 학습에 유리한 형태의 데이터 1만개 이상을 수집하였습니다. IJCAI 2024에 공동 1저자로 논문을 게재하였습니다.",
           whatIDid: [
             "전체적인 프론트엔드 UI 및 그리드 조작 로직 개발",
-            "이벤트 관련 백엔드 API 개발",
+            "이벤트 관련 Nestjs API 및 role guard 개발",
             "수집 데이터 품질 개선을 위한 UX 디자인 및 유저 데이터 수집",
           ],
           techStacks: [
@@ -59,15 +59,17 @@ const experience = {
           startedAt: "2022-08",
           endedAt: "2023-03",
           description:
-            "AI 기반으로 강아지 사이즈를 측정하고, 맞는 옷을 추천해주는 쇼핑몰 Doggly의 FE를 개발했습니다. 결제모듈을 포함한 쇼핑몰의 전체적인 기능과 판매자용 페이지, admin용 페이지를 전부 개발하였으며 PWA와 웹뷰 android/ios 앱도 개발하였습니다. 유저 퍼널 개선을 위해 로깅과 A/B 테스팅도 수행하였습니다.",
+            "AI 기반으로 강아지 사이즈를 측정하고, 맞는 옷을 추천해주는 쇼핑몰 Doggly의 FE를 개발했습니다. 결제모듈을 포함한 쇼핑몰의 전체적인 기능과 판매자용 페이지, admin용 페이지를 전부 개발하였으며 retention 향상을 위해 PWA와 웹뷰 android/ios 앱도 개발하였습니다. 유저 퍼널 개선을 위해 로깅과 A/B 테스팅도 수행하였습니다.",
           whatIDid: [
-            "쇼핑몰의 전체적인 프론트엔드 개발 및 유지보수",
-            "Android & iOS 웹뷰 앱 개발 및 결제 모듈 연동",
-            "퍼널 개선을 위한 A/B 테스팅",
+            "쇼핑몰의 전체적인 프론트엔드 개발, 반응형 작업 및 유지보수",
+            "Android(Jetpack Compose) & iOS(SwiftUI) 웹뷰 앱 개발 및 js bridge를 이용한 결제 모듈(포트원) 연동",
+            "퍼널 개선을 위한 UI A/B 테스팅",
+            "zero install과 Vite 도입으로 CI/CD 속도 개선",
           ],
           techStacks: [
             "React",
             "TypeScript",
+            "Styled-components",
             "Jetpack Compose",
             "SwiftUI",
             "i18next",
@@ -96,9 +98,9 @@ const experience = {
           endedAt: "2023-10",
 
           description:
-            "러시아워의 플러터 버전 개발에 참여했습니다. GA, Amplitude, Smartlook, 자체 로깅 시스템을 통해 유저 로그를 수집하였고, 리텐션, 퍼널을 계산할 수 있는 자체 로그 분석 툴도 개발하였습니다.",
-          whatIDid: ["러시아워 플러터 앱 개발", "앱 유저 로그 기록"],
-          techStacks: ["Flutter", "Firebase"],
+            "러시아워의 플러터 버전 개발에 참여했습니다. GA, Amplitude, Smartlook, 자체 로깅 시스템을 통해 유저 로그를 수집하였고, 웹 상에서 리텐션, 퍼널을 계산할 수 있는 자체 로그 분석 툴도 개발하였습니다.",
+          whatIDid: ["러시아워 Flutter 앱 개발", "앱 유저 로그 기록"],
+          techStacks: ["Flutter", "Firebase", "React", "TypeScript"],
         },
         {
           name: "러시아워 AI",
@@ -107,7 +109,7 @@ const experience = {
           endedAt: "2023-12",
 
           description:
-            "지하철 혼잡도 데이터를 이용해 ML 기반으로 실시간 혼잡도를 예측하는 AI를 개발하였습니다.",
+            "지하철 혼잡도 데이터를 이용해 ML 기반으로 혼잡도를 예측하는 AI를 개발하였습니다.",
           whatIDid: ["지하철 혼잡도 및 빈자리 예측 AI 개발"],
           techStacks: ["Scikit-learn", "Pandas"],
         },
@@ -116,12 +118,13 @@ const experience = {
           isImportant: true,
           startedAt: "2022-02",
           endedAt: "2023-12",
-          description: "스타트업의 개발자로서 다양한 개발 업무를 수행했습니다.",
+          description:
+            "스타트업의 개발자로서 기획자의 업무를 자동화하고 개발자의 생산성을 향상시키기 위해 노력했습니다. 초기창업팀의 일원으로서 박람회 및 펫페어 부스 운영, 유저 인터뷰, 협력사 미팅 등 다양한 업무를 수행하였습니다. 특히 현장에서 피드백을 받고 반영할 일이 많았기에 작업 속도를 높이고 자동 배포 시간을 단축(3분->1분)했습니다.",
           whatIDid: [
             "랜딩 페이지 및 관리자 페이지 개발",
-            "유저 로그 분석 및 통계",
+            "유저 로그 분석 툴 개발, 분석 및 통계",
             "업무 자동화",
-            "생산성 향상을 위한 모노레포 통합",
+            "Yarn Workspaces를 이용한 모노레포 통합",
           ],
           techStacks: [
             "React",
@@ -129,6 +132,7 @@ const experience = {
             "Amplitude",
             "AWS Lightsail",
             "AWS Lambda",
+            "Docker",
             "FastAPI",
             "Pandas",
             "mono-repo",

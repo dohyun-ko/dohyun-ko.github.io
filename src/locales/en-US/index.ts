@@ -153,6 +153,10 @@ export const main = {
         level: 4,
       },
       {
+        name: "Next.js",
+        level: 3,
+      },
+      {
         name: "Python",
         level: 3,
       },

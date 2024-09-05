@@ -32,6 +32,10 @@ const skills = [
     level: 4,
   },
   {
+    name: "Next.js",
+    level: 3,
+  },
+  {
     name: "Python",
     level: 3,
   },

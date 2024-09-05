@@ -92,7 +92,7 @@ export const main = {
         startedAt: "2023-07",
         endedAt: "2023-07",
         description:
-          "개인적으로 자주 사용하는 React 컴포넌트를 모아 npm에 배포한 라이브러리입니다. atomic design 패턴을 따르며, Storybook을 사용해 문서화했습니다.",
+          "개인적으로 자주 사용하는 React 컴포넌트를 모아 npm에 배포한 라이브러리입니다. atomic design 패턴을 따르며, Storybook을 사용해 문서화했습니다. 이 이력서와 개인 웹페이지에 사용중입니다.",
         whatIDid: [
           "React 컴포넌트 개발",
           "Storybook을 사용한 컴포넌트 문서화",
@@ -107,10 +107,11 @@ export const main = {
         startedAt: "2023-04",
         endedAt: "2023-06",
         description:
-          "프론트엔드와 백엔드 모두 C++로만 작성된 더치페이 플랫폼입니다. Emscripten을 이용해 C++를 웹 어셈블리로 트랜스파일할 수 있다는 점과 디자인 패턴을 이용해 React의 navigator, state, router, 함수형 component, style 등 핵심 기능을 구현했습니다. GIST 객체 지향 프로그래밍 수업 기말 과제로 제출했습니다.",
+          "프론트엔드와 백엔드 모두 C++로만 작성된 더치페이 플랫폼입니다. Emscripten을 이용해 C++를 웹 어셈블리로 트랜스파일할 수 있다는 점과 디자인 패턴을 이용해 React의 navigator, state, router, function component, style 등 핵심 기능을 구현했습니다. 성능 테스트 결과 해시 반복 연산 작업에서 React보다 110배 가량 빠른 성능을 보였습니다. [발표자료](https://docs.google.com/presentation/d/1z5m_s2rTHaUCb3rpHDB-zI-1NMvKHpysNDFqbwSA2LE/edit?usp=sharing)",
         whatIDid: [
           "C++과 웹 어셈블리를 사용한 프론트엔드 UI 개발",
-          "State, Navigator 등 프론트엔드 로직 개발",
+          "React 및 Flutter와 유사한 프레임워크 구현",
+          "State, Navigator, Router, Style 등 프론트엔드 로직 개발",
         ],
         techStacks: ["C++", "WebAssembly", "Emscripten"],
       },
@@ -144,6 +145,10 @@ export const main = {
       {
         name: "HTML/CSS",
         level: 4,
+      },
+      {
+        name: "Next.js",
+        level: 3,
       },
       {
         name: "Python",

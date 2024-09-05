@@ -19,7 +19,7 @@ const experience = {
             "Developed O2ARC 3.0, a tool for collecting human solution data for the Abstract and Reasoning Corpus ([ARC](https://github.com/fchollet/ARC)), a benchmark for evaluating AI reasoning abilities. The data collected by the existing tool was not suitable for training, so I restricted user actions to collect over 10,000 data points in a format favorable for AI training. Co-authored a paper published at IJCAI 2024 as a co-first author.",
           whatIDid: [
             "Developed the overall frontend UI and grid manipulation logic",
-            "Developed backend APIs related to events",
+            "Developed Nestjs APIs related to events and role guards",
             "Designed UX and collected user data to improve data quality",
           ],
           techStacks: [
@@ -61,13 +61,15 @@ const experience = {
           description:
             "Developed the frontend for Doggly, an e-commerce that measures dog sizes and recommends fitting clothes based on AI. I developed all the key features of the shopping mall, including the payment module, seller pages, admin pages, and also developed PWA and webview Android/iOS apps. Additionally, I performed logging and A/B testing to improve the user funnel.",
           whatIDid: [
-            "Developed and maintained the overall frontend of the shopping mall",
-            "Developed Android & iOS webview apps and integrated payment modules",
+            "Developed and maintained the overall frontend of the shopping mall & made it responsive",
+            "Developed Android(Jetpack Compose) & iOS(SwiftUI) webview apps and integrated payment modules",
             "Conducted A/B testing to improve the user funnel",
+            "Speeding up CI/CD with zero install and Vite",
           ],
           techStacks: [
             "React",
             "TypeScript",
+            "Styled-components",
             "Jetpack Compose",
             "SwiftUI",
             "i18next",
@@ -100,7 +102,7 @@ const experience = {
             "Developed Rush Hour Flutter app",
             "Recorded app user logs",
           ],
-          techStacks: ["Flutter", "Firebase"],
+          techStacks: ["Flutter", "Firebase", "React", "TypeScript"],
         },
         {
           name: "Rush Hour AI",
@@ -108,7 +110,7 @@ const experience = {
           startedAt: "2023-09",
           endedAt: "2023-12",
           description:
-            "Developed an AI that predicts real-time subway congestion based on congestion data using machine learning.",
+            "Developed an AI that predicts subway congestion based on congestion data using machine learning.",
           whatIDid: [
             "Developed AI for predicting subway congestion and available seats",
           ],
@@ -120,12 +122,12 @@ const experience = {
           startedAt: "2022-02",
           endedAt: "2023-12",
           description:
-            "Performed various development tasks as a developer in a startup.",
+            "As a developer in a startup, I worked to automate the work of planners and improve the productivity of developers. As a member of the early-stage startup team, I performed various tasks such as running booths at trade shows and pet fairs, interviewing users, and meeting with partners. In particular, there was a lot of work to receive and reflect feedback from the field, so I speed up the work and shorten the automatic deployment time (3 minutes -> 1 minute).",
           whatIDid: [
             "Developed landing pages and admin pages",
-            "Analyzed and conducted statistics on user logs",
+            "Developed log analysis tool and analyzed statistics on user logs",
             "Automated tasks",
-            "Integrated mono-repo to improve productivity",
+            "Integrated mono-repo using Yarn Workspaces",
           ],
           techStacks: [
             "React",
@@ -133,6 +135,7 @@ const experience = {
             "Amplitude",
             "AWS Lightsail",
             "AWS Lambda",
+            "Docker",
             "FastAPI",
             "Pandas",
             "mono-repo",
