@@ -1,5 +1,5 @@
 import Font from "@/types/Font";
-import { Grid, Spacer, Text } from "@dohyun-ko/react-atoms";
+import { Flex, Grid, Spacer, Text } from "@dohyun-ko/react-atoms";
 import { useTranslation } from "react-i18next";
 import SectionTitle from "../components/SectionTitle";
 
@@ -35,6 +35,7 @@ const skills = [
     name: "Next.js",
     level: 3,
   },
+
   {
     name: "Python",
     level: 3,
@@ -59,18 +60,6 @@ const skills = [
     name: "Kotlin",
     level: 1,
   },
-  {
-    name: "Docker",
-    level: 1,
-  },
-  {
-    name: "Rust",
-    level: 1,
-  },
-  {
-    name: "Go",
-    level: 1,
-  },
 ];
 
 const SkillSection = ({}: SkillSectionProps) => {
@@ -78,7 +67,9 @@ const SkillSection = ({}: SkillSectionProps) => {
 
   return (
     <>
-      <SectionTitle>보유기술</SectionTitle>
+      <Flex>
+        <SectionTitle>보유기술</SectionTitle>
+      </Flex>
 
       <Spacer height={"10px"} />
 

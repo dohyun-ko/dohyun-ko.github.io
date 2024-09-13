@@ -40,6 +40,21 @@ export const main = {
   sideProject: {
     sideProjects: [
       {
+        name: "React-Atoms: React Component Library",
+        isImportant: true,
+        url: "https://github.com/dohyun-ko/react-atoms",
+        startedAt: "2023-07",
+        endedAt: "2023-07",
+        description:
+          "A library of React components I frequently use, which I published on npm. It follows the atomic design pattern and is documented using Storybook.",
+        whatIDid: [
+          "Developed React components",
+          "Documented components using Storybook",
+          "Published on npm",
+        ],
+        techStacks: ["React", "TypeScript", "RollUp", "Storybook", "npm"],
+      },
+      {
         name: "2024 KPMG Ideathon: 🥉 3rd Place",
         isImportant: true,
         url: "https://github.com/gist-optima",
@@ -89,21 +104,6 @@ export const main = {
         techStacks: ["React", "TypeScript", "Mapbox", "PWA"],
       },
       {
-        name: "React-Atoms: React Component Library",
-        isImportant: true,
-        url: "https://github.com/dohyun-ko/react-atoms",
-        startedAt: "2023-07",
-        endedAt: "2023-07",
-        description:
-          "A library of React components I frequently use, which I published on npm. It follows the atomic design pattern and is documented using Storybook.",
-        whatIDid: [
-          "Developed React components",
-          "Documented components using Storybook",
-          "Published on npm",
-        ],
-        techStacks: ["React", "TypeScript", "RollUp", "Storybook", "npm"],
-      },
-      {
         name: "Dutch: OOP Final Project",
         isImportant: true,
         url: "https://github.com/dohyun-ko/dutch-wasm",
@@ -131,66 +131,6 @@ export const main = {
           "Prompt Engineering",
         ],
         techStacks: ["React", "TypeScript", "FastAPI", "PostgreSQL"],
-      },
-    ],
-  },
-  skill: {
-    skills: [
-      {
-        name: "React",
-        level: 5,
-      },
-      {
-        name: "TypeScript",
-        level: 4,
-      },
-      {
-        name: "JavaScript",
-        level: 4,
-      },
-      {
-        name: "HTML/CSS",
-        level: 4,
-      },
-      {
-        name: "Next.js",
-        level: 3,
-      },
-      {
-        name: "Python",
-        level: 3,
-      },
-      {
-        name: "NestJS",
-        level: 2,
-      },
-      {
-        name: "FastAPI",
-        level: 2,
-      },
-      {
-        name: "Flutter",
-        level: 2,
-      },
-      {
-        name: "C++",
-        level: 2,
-      },
-      {
-        name: "Kotlin",
-        level: 1,
-      },
-      {
-        name: "Docker",
-        level: 1,
-      },
-      {
-        name: "Rust",
-        level: 1,
-      },
-      {
-        name: "Assembly",
-        level: 1,
       },
     ],
   },

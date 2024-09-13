@@ -5,7 +5,7 @@ import Project from "@/types/Project";
 import { formatYearMonth } from "@/utils/dateFormats";
 import { Flex, Text } from "@dohyun-ko/react-atoms";
 import ReactMarkdown from "react-markdown";
-import StylessA from "./StylessA";
+import StylessA from "../../../../components/StylessA";
 
 interface ProjectCardProps {
   project: Project;

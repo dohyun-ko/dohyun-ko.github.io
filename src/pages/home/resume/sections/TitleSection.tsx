@@ -1,8 +1,8 @@
+import StylessA from "@/components/StylessA";
 import useResponsiveFont from "@/hooks/useResponsiveFont";
 import Font from "@/types/Font";
 import { Area, Content, Flex, Spacer, Text } from "@dohyun-ko/react-atoms";
 import { useTranslation } from "react-i18next";
-import StylessA from "../components/StylessA";
 
 interface TitleSectionProps {}
 
@@ -27,15 +27,25 @@ const TitleSection = ({}: TitleSectionProps) => {
 
         <Flex>
           <Text size={font(1.5)}>
-            <StylessA href="mailto:dohyun682@gmail.com">
+            <StylessA href="mailto:dohyun682@gmail.com" hasIcon={false}>
               dohyun682@gmail.com
             </StylessA>{" "}
-            | <StylessA href="https://github.com/dohyun-ko">GitHub</StylessA> |{" "}
-            <StylessA href="https://www.instagram.com/dohyun682">
+            |{" "}
+            <StylessA href="https://github.com/dohyun-ko" hasIcon={false}>
+              GitHub
+            </StylessA>{" "}
+            |{" "}
+            <StylessA
+              href="https://www.instagram.com/dohyun682"
+              hasIcon={false}
+            >
               Instagram
             </StylessA>{" "}
             |{" "}
-            <StylessA href="https://www.linkedin.com/in/dohyun-ko-92b885212">
+            <StylessA
+              href="https://www.linkedin.com/in/dohyun-ko-92b885212"
+              hasIcon={false}
+            >
               LinkedIn
             </StylessA>
           </Text>

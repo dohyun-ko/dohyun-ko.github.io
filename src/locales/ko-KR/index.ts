@@ -4,7 +4,7 @@ import experience from "./experience";
 export const main = {
   title: { developer: "개발자", name: "고도현 | Dohyun Ko" },
   introduction:
-    "스타트업에서 2년간 일하며 프론트엔드, 백엔드, 앱, 자동화, ML 등 다양한 분야를 주도적으로 작업했습니다. 이후 AI 연구실에서 일하며 데이터 수집 툴을 제작했고 UX 관련으로 논문을 작성했습니다. 개발인력이 늘 부족한 곳에서 일했기에 생산성과 유지보수의 편의성을 항상 중시합니다. 모노레포와 라이브러리를 제작해 생산성을 높이며 atomic 패턴과 Storybook로 제 다음 사람이 보기 쉬운 코드를 짜려 노력합니다.",
+    "스타트업에서 2년간 일하며 프론트엔드, 백엔드, 앱, 자동화, ML 등 다양한 분야를 주도적으로 작업했습니다. 이후 AI 연구실에서 일하며 데이터 수집 툴을 제작했고 UX 관련으로 논문을 작성했습니다. 개발인력이 늘 부족한 곳에서 일했기에 생산성과 유지보수의 편의성을 항상 중시합니다. 모노레포와 라이브러리를 제작해 생산성을 높이며 atomic 패턴과 Storybook로 동료가 보기 쉬운 코드를 짜려 노력합니다.",
   current,
   education: {
     attendedLectures: [
@@ -39,6 +39,21 @@ export const main = {
   experience,
   sideProject: {
     sideProjects: [
+      {
+        name: "React-Atoms: React Component Library",
+        isImportant: true,
+        url: "https://github.com/dohyun-ko/react-atoms",
+        startedAt: "2023-07",
+        endedAt: "2023-07",
+        description:
+          "개인적으로 자주 사용하는 React 컴포넌트를 모아 npm에 배포한 라이브러리입니다. atomic design 패턴을 따르며, Storybook을 사용해 문서화했습니다. 이 이력서와 개인 웹페이지에 사용중입니다.",
+        whatIDid: [
+          "React 컴포넌트 개발",
+          "Storybook을 사용한 컴포넌트 문서화",
+          "npm 배포",
+        ],
+        techStacks: ["React", "TypeScript", "RollUp", "Storybook", "npm"],
+      },
       {
         name: "2024 KPMG Ideathon: 🥉 3등",
         isImportant: true,
@@ -86,21 +101,6 @@ export const main = {
         techStacks: ["React", "TypeScript", "Mapbox", "PWA"],
       },
       {
-        name: "React-Atoms: React Component Library",
-        isImportant: true,
-        url: "https://github.com/dohyun-ko/react-atoms",
-        startedAt: "2023-07",
-        endedAt: "2023-07",
-        description:
-          "개인적으로 자주 사용하는 React 컴포넌트를 모아 npm에 배포한 라이브러리입니다. atomic design 패턴을 따르며, Storybook을 사용해 문서화했습니다. 이 이력서와 개인 웹페이지에 사용중입니다.",
-        whatIDid: [
-          "React 컴포넌트 개발",
-          "Storybook을 사용한 컴포넌트 문서화",
-          "npm 배포",
-        ],
-        techStacks: ["React", "TypeScript", "RollUp", "Storybook", "npm"],
-      },
-      {
         name: "Dutch: OOP Final Project",
         isImportant: true,
         url: "https://github.com/dohyun-ko/dutch-wasm",
@@ -125,66 +125,6 @@ export const main = {
           "편의점 음식별로 페르소나를 설정하고 바코드를 스캔하면 서로 간의 대화를 생성해주는 서비스입니다. 프론트엔드에서의 바코드 인식이 challenge였습니다.",
         whatIDid: ["프론트엔드 개발", "백엔드 개발", "프롬프팅"],
         techStacks: ["React", "TypeScript", "FastAPI", "PostgreSQL"],
-      },
-    ],
-  },
-  skill: {
-    skills: [
-      {
-        name: "React",
-        level: 5,
-      },
-      {
-        name: "TypeScript",
-        level: 4,
-      },
-      {
-        name: "JavaScript",
-        level: 4,
-      },
-      {
-        name: "HTML/CSS",
-        level: 4,
-      },
-      {
-        name: "Next.js",
-        level: 3,
-      },
-      {
-        name: "Python",
-        level: 3,
-      },
-      {
-        name: "NestJS",
-        level: 2,
-      },
-      {
-        name: "FastAPI",
-        level: 2,
-      },
-      {
-        name: "Flutter",
-        level: 2,
-      },
-      {
-        name: "C++",
-        level: 2,
-      },
-      {
-        name: "Kotlin",
-        level: 1,
-      },
-      {
-        name: "Docker",
-        level: 1,
-      },
-      {
-        name: "Rust",
-        level: 1,
-      },
-      {
-        name: "Assembly",
-        level: 1,
       },
     ],
   },

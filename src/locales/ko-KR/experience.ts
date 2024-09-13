@@ -16,7 +16,7 @@ const experience = {
           startedAt: "2024-01",
           endedAt: "2024-05",
           description:
-            "AI의 추론능력을 평가하는 벤치마크 Abstract and Reasoning Corpus([ARC](https://github.com/fchollet/ARC))의 사람 풀이 데이터 수집을 위한 툴 O2ARC 3.0을 개발했습니다. 기존 툴에서 수집된 데이터는 학습에 쓰기 어려운 형태였으며, 이를 유저가 취할 수 있는 행동을 제한해 AI 학습에 유리한 형태의 데이터 1만개 이상을 수집하였습니다. IJCAI 2024에 공동 1저자로 논문을 게재하였습니다.",
+            "AI의 추론능력을 평가하는 벤치마크 [ARC](https://github.com/fchollet/ARC) 사람 풀이 데이터 수집을 위한 툴 O2ARC 3.0을 개발했습니다. 기존 툴에서 수집된 데이터는 학습에 쓰기 어려운 형태였으며, 이를 유저가 취할 수 있는 행동을 제한해 AI 학습에 유리한 형태의 데이터 1만개 이상을 수집하였습니다. IJCAI 2024에 공동 1저자로 논문을 게재하였습니다.",
           whatIDid: [
             "전체적인 프론트엔드 UI 및 그리드 조작 로직 개발",
             "이벤트 관련 Nestjs API 및 role guard 개발",
@@ -44,7 +44,7 @@ const experience = {
       ],
     },
     {
-      name: "Sigor Inc.",
+      name: "스타트업 Sigor Inc.",
       isImportant: true,
       color: "#FEAA17",
       url: "https://introduce.sigor.company/",

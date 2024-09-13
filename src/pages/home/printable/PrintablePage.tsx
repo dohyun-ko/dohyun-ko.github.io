@@ -14,15 +14,15 @@ const PrintablePage = () => {
 
         <Spacer height={"30px"} />
 
+        <ExperienceSection />
+
+        <Spacer height={"30px"} />
+
         <SkillSection />
 
         <Spacer height={"30px"} />
 
         <EducationSection />
-
-        <Spacer height={"30px"} />
-
-        <ExperienceSection />
 
         <Spacer height={"30px"} />
 

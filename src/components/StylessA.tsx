@@ -1,9 +1,12 @@
+import LinkIcon from "@/assets/icons/link.svg";
+
 interface StylessAProps {
   href?: string;
   children: React.ReactNode;
+  hasIcon?: boolean;
 }
 
-const StylessA = ({ href, children }: StylessAProps) => {
+const StylessA = ({ href, children, hasIcon = true }: StylessAProps) => {
   return (
     <a
       href={href}
@@ -11,9 +14,13 @@ const StylessA = ({ href, children }: StylessAProps) => {
       rel="noopener noreferrer"
       style={{
         color: "inherit",
+        display: "inline-flex",
+        gap: "5px",
       }}
     >
       {children}
+
+      {href && hasIcon && <img src={LinkIcon} />}
     </a>
   );
 };

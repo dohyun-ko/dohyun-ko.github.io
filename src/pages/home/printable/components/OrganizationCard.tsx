@@ -3,9 +3,9 @@ import Font from "@/types/Font";
 import Organization from "@/types/Organization";
 import { formatYearMonth } from "@/utils/dateFormats";
 import { Flex, Text } from "@dohyun-ko/react-atoms";
+import StylessA from "../../../../components/StylessA";
 import Card from "./Card";
 import ProjectCard from "./ProjectCard";
-import StylessA from "./StylessA";
 
 interface OrganizationCardProps {
   organization: Organization;

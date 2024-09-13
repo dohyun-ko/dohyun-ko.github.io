@@ -22,6 +22,57 @@ const mapFont = (level: number): Font => {
 
 interface SkillSectionProps {}
 
+const skills = [
+  {
+    name: "React",
+    level: 5,
+  },
+  {
+    name: "TypeScript",
+    level: 4,
+  },
+  {
+    name: "Next.js",
+    level: 3,
+  },
+  {
+    name: "Python",
+    level: 3,
+  },
+  {
+    name: "NestJS",
+    level: 2,
+  },
+  {
+    name: "FastAPI",
+    level: 2,
+  },
+  {
+    name: "Flutter",
+    level: 2,
+  },
+  {
+    name: "C++",
+    level: 2,
+  },
+  {
+    name: "Kotlin",
+    level: 1,
+  },
+  {
+    name: "Docker",
+    level: 1,
+  },
+  {
+    name: "Rust",
+    level: 1,
+  },
+  {
+    name: "Assembly",
+    level: 1,
+  },
+]
+
 const SkillSection = ({}: SkillSectionProps) => {
   const { t } = useTranslation();
 
@@ -33,12 +84,7 @@ const SkillSection = ({}: SkillSectionProps) => {
         <Spacer height={"30px"} />
 
         <Grid gridTemplateColumns="1fr 1fr 1fr" gap={"10px"}>
-          {(
-            t("skill.skills", { returnObjects: true }) as {
-              name: string;
-              level: number;
-            }[]
-          ).map((skill) => (
+          {skills.map((skill) => (
             <Text key={skill.name} font={mapFont(skill.level)}>
               {skill.name}
             </Text>

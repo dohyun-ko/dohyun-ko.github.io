@@ -21,5 +21,11 @@ export default defineConfig({
       },
     },
   },
-  plugins: [react(), tsconfigPaths(), svgr()],
+  plugins: [
+    react(),
+    tsconfigPaths(),
+    svgr({
+      include: "**/*.svg",
+    }),
+  ],
 });
