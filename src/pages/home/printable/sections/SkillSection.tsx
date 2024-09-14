@@ -56,10 +56,6 @@ const skills = [
     name: "C++",
     level: 2,
   },
-  {
-    name: "Kotlin",
-    level: 1,
-  },
 ];
 
 const SkillSection = ({}: SkillSectionProps) => {

@@ -24,7 +24,7 @@ const ExperienceSection = ({}: ExperienceSectionProps) => {
 
       <Spacer height={"10px"} />
 
-      <Flex flexDirection={"column"} gap={"30px"}>
+      <Flex flexDirection={"column"} gap={"20px"}>
         {organizations.map((experience) => (
           <OrganizationCard key={experience.name} organization={experience} />
         ))}

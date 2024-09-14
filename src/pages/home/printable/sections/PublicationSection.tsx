@@ -13,7 +13,7 @@ const PublicationSection = ({}: PublicationSectionProps) => {
     <>
       <SectionTitle>Publications</SectionTitle>
 
-      <Spacer height={"30px"} />
+      <Spacer height={"15px"} />
 
       <Flex flexDirection={"column"} gap={"20px"}>
         {(

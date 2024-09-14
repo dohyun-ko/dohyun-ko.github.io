@@ -15,7 +15,7 @@ const SideProjectSection = ({}: SideProjectSectionProps) => {
 
       <Spacer height={"10px"} />
 
-      <Flex flexDirection={"column"} gap={"20px"}>
+      <Flex flexDirection={"column"} gap={"15px"}>
         {(t("sideProject.sideProjects", { returnObjects: true }) as Project[])
           .filter((sideProject) => sideProject.isImportant)
           .map((sideProject) => (

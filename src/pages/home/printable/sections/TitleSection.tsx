@@ -12,6 +12,9 @@ const TitleSection = ({}: TitleSectionProps) => {
 
   return (
     <>
+      <Text as={"h1"} font={Font.Bold} size={font(1.5)}>
+        {t("title.developer")}
+      </Text>
       <Text as={"h1"} font={Font.Bold} size={font(2.5)}>
         {t("title.name")}
       </Text>

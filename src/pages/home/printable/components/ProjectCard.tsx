@@ -37,26 +37,28 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
 
       <ReactMarkdown>{description}</ReactMarkdown>
 
-      <ul
-        style={{
-          margin: "0px",
-          paddingLeft: "20px",
-        }}
-      >
-        {whatIDid.map((whatIDid) => (
-          <li key={whatIDid}>
-            <Text size={font(0.75)}>{whatIDid}</Text>
-          </li>
-        ))}
+      {whatIDid && whatIDid.length > 0 && (
+        <ul
+          style={{
+            margin: "0px",
+            paddingLeft: "20px",
+          }}
+        >
+          {whatIDid.map((whatIDid) => (
+            <li key={whatIDid}>
+              <Text size={font(0.75)}>{whatIDid}</Text>
+            </li>
+          ))}
 
-        {techStacks && techStacks.length > 0 && (
-          <li>
-            <Text size={font(0.75)}>
-              사용 기술: {techStacks.map((techStack) => techStack).join(", ")}
-            </Text>
-          </li>
-        )}
-      </ul>
+          {techStacks && techStacks.length > 0 && (
+            <li>
+              <Text size={font(0.75)}>
+                사용 기술: {techStacks.map((techStack) => techStack).join(", ")}
+              </Text>
+            </li>
+          )}
+        </ul>
+      )}
     </Flex>
   );
 };

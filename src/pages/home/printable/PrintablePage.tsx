@@ -12,7 +12,7 @@ const PrintablePage = () => {
       <Content width={"92%"}>
         <TitleSection />
 
-        <Spacer height={"30px"} />
+        <Spacer height={"20px"} />
 
         <ExperienceSection />
 

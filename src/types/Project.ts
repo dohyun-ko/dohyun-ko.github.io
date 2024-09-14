@@ -5,7 +5,7 @@ interface Project {
   startedAt: string;
   endedAt?: string;
   description: string;
-  whatIDid: string[];
+  whatIDid?: string[];
   techStacks?: string[];
 }
 

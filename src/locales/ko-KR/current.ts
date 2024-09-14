@@ -24,13 +24,29 @@ const current = {
           url: "https://github.com/gsainfoteam/ziggle-fe",
           startedAt: "2023-04",
           description:
-            "GIST 통합 공지 플랫폼인 Ziggle의 프론트엔드를 개발하고 있습니다. React로 초기버전 개발 및 Next.js로 migration을 하였으며, GraphQL, Apollo Client 등 다양한 기술을 적극 도입하고 있습니다. 교내에 성공적으로 정착하여 학부 인원의 25%인 DAU 200명을 유지중입니다.",
-          whatIDid: ["팀장 및 프론트엔드 개발"],
+            "GIST 통합 공지 플랫폼인 Ziggle의 팀장 및 프론트엔드를 개발하고 있습니다.",
+          whatIDid: [
+            "React로 초기버전 개발 및 Next.js로 migration",
+            "GraphQL, Apollo Client 등 다양한 기술 도입",
+            "학부생의 25%인 DAU 200명 유지 중",
+          ],
           techStacks: ["React", "TypeScript", "Next.js", "Tailwind CSS"],
         },
         {
-          name: "IdP 프론트엔드",
+          name: "프론트엔드 코어",
           isImportant: true,
+          startedAt: "2022-09",
+          description:
+            "팀 내 프론트엔드 기술 수준을 향상시키기 위해 노력하고 있습니다.",
+          whatIDid: [
+            "i18n 도입으로 다국어 지원",
+            "Atomic 패턴 도입 및 Storybook으로 문서화",
+            "Playwright를 이용한 E2E 테스트 자동화",
+          ],
+        },
+        {
+          name: "IdP 프론트엔드",
+          isImportant: false,
           url: "https://idp.gistory.me",
           startedAt: "2024-03",
           description:
