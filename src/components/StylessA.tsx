@@ -20,7 +20,7 @@ const StylessA = ({ href, children, hasIcon = true }: StylessAProps) => {
     >
       {children}
 
-      {href && hasIcon && <img src={LinkIcon} />}
+      {href && hasIcon && <img src={LinkIcon} width={16} />}
     </a>
   );
 };

@@ -16,7 +16,7 @@ const PrintablePage = () => {
 
         <ExperienceSection />
 
-        <Spacer height={"30px"} />
+        <Spacer height={"50px"} />
 
         <SkillSection />
 
@@ -28,7 +28,7 @@ const PrintablePage = () => {
 
         <PublicationSection />
 
-        <Spacer height={"30px"} />
+        <Spacer height={"40px"} />
 
         <SideProjectSection />
       </Content>

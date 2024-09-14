@@ -10,9 +10,11 @@ const ExperienceSection = ({}: ExperienceSectionProps) => {
   const { t } = useTranslation();
 
   const organizations = [
-    ...(t("experience.experiences", {
-      returnObjects: true,
-    }) as Organization[]),
+    ...(
+      t("experience.experiences", {
+        returnObjects: true,
+      }) as Organization[]
+    ).toReversed(),
     ...(t("current.organizations", {
       returnObjects: true,
     }) as Organization[]),
