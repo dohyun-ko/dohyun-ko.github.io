@@ -14,7 +14,7 @@ const ExperienceSection = ({}: ExperienceSectionProps) => {
       t("experience.experiences", {
         returnObjects: true,
       }) as Organization[]
-    ).toReversed(),
+    ).reverse(),
     ...(t("current.organizations", {
       returnObjects: true,
     }) as Organization[]),
