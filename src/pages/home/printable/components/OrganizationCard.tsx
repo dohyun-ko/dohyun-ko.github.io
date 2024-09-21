@@ -2,6 +2,7 @@ import useResponsiveFont from "@/hooks/useResponsiveFont";
 import Font from "@/types/Font";
 import Organization from "@/types/Organization";
 import { formatYearMonth } from "@/utils/dateFormats";
+import formatUrl from "@/utils/formatUrl";
 import { Flex, Text } from "@dohyun-ko/react-atoms";
 import StylessA from "../../../../components/StylessA";
 import Card from "./Card";
@@ -25,9 +26,13 @@ const OrganizationCard = ({ organization }: OrganizationCardProps) => {
         }}
       >
         <StylessA href={url}>
-          <Text font={Font.Bold} size={font(1)}>
-            {name}
-          </Text>
+          <Flex>
+            <Text font={Font.Bold} size={font(1)}>
+              {name}
+            </Text>
+
+            {url && <Text size={font(0.75)}>{formatUrl(url)}</Text>}
+          </Flex>
         </StylessA>
 
         <Text size={font(0.75)}>{job}</Text>

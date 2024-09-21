@@ -3,7 +3,8 @@ import useResponsiveFont from "@/hooks/useResponsiveFont";
 import Font from "@/types/Font";
 import Project from "@/types/Project";
 import { formatYearMonth } from "@/utils/dateFormats";
-import { Flex, Text } from "@dohyun-ko/react-atoms";
+import formatUrl from "@/utils/formatUrl";
+import { Flex, Spacer, Text } from "@dohyun-ko/react-atoms";
 import ReactMarkdown from "react-markdown";
 import StylessA from "../../../../components/StylessA";
 
@@ -28,6 +29,8 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
         <Text font={Font.SemiBold} size={font(1)}>
           {name}
         </Text>
+
+        {url && <Text size={font(0.75)}>{formatUrl(url)}</Text>}
       </StylessA>
 
       <Text size={font(0.75)}>
@@ -35,29 +38,30 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
         {endedAt ? formatYearMonth(new Date(endedAt)) : "Now"}
       </Text>
 
-      <ReactMarkdown>{description}</ReactMarkdown>
+      {description && (
+        <>
+          <Spacer height={"5px"} />
+          <ReactMarkdown>{description}</ReactMarkdown>
+        </>
+      )}
 
       {whatIDid && whatIDid.length > 0 && (
-        <ul
-          style={{
-            margin: "0px",
-            paddingLeft: "20px",
-          }}
-        >
-          {whatIDid.map((whatIDid) => (
-            <li key={whatIDid}>
-              <Text size={font(0.75)}>{whatIDid}</Text>
-            </li>
-          ))}
+        <>
+          <Spacer height={"5px"} />
 
-          {techStacks && techStacks.length > 0 && (
-            <li>
-              <Text size={font(0.75)}>
-                사용 기술: {techStacks.map((techStack) => techStack).join(", ")}
-              </Text>
-            </li>
-          )}
-        </ul>
+          <ul
+            style={{
+              margin: "0px",
+              paddingLeft: "20px",
+            }}
+          >
+            {whatIDid.map((whatIDid) => (
+              <li key={whatIDid}>
+                <Text size={font(0.75)}>{whatIDid}</Text>
+              </li>
+            ))}
+          </ul>
+        </>
       )}
     </Flex>
   );

@@ -4,7 +4,7 @@ interface Project {
   url?: string;
   startedAt: string;
   endedAt?: string;
-  description: string;
+  description?: string;
   whatIDid?: string[];
   techStacks?: string[];
 }

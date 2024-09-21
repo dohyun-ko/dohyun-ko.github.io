@@ -69,12 +69,14 @@ const SkillSection = ({}: SkillSectionProps) => {
 
       <Spacer height={"10px"} />
 
-      <Grid gridTemplateColumns="1fr 1fr 1fr 1fr 1fr" gap={"0px"}>
-        {skills.map((skill) => (
-          <Text key={skill.name} font={mapFont(skill.level)}>
-            {skill.name}
-          </Text>
-        ))}
+      <Grid gridTemplateColumns="70px 1fr" gap={"0px"}>
+        <Text>전문:</Text>
+
+        <Text>React &nbsp; TypeScript &nbsp; Next.js</Text>
+
+        <Text>활용:</Text>
+
+        <Text>Python &nbsp; NestJS &nbsp; FastAPI &nbsp; Flutter</Text>
       </Grid>
     </>
   );

@@ -5,7 +5,7 @@ import styled from "styled-components";
 interface CardProps {}
 
 const Card = styled(Grid)`
-  gap: 40px;
+  gap: 30px;
   grid-template-columns: 160px 1fr;
 
   @media screen and (max-width: ${MOBILE_MAX_WIDTH}px) {

@@ -6,6 +6,11 @@ a {
   color: inherit;
 }
 
+p {
+  padding: 0;
+  margin: 0; /* for ReactMarkdown */
+}
+
 @font-face {
   font-family: PretendardW100;
   src: url("./assets/fonts/pretendard/Pretendard-Thin.woff");

@@ -12,21 +12,18 @@ const TitleSection = ({}: TitleSectionProps) => {
 
   return (
     <>
-      <Text as={"h1"} font={Font.Bold} size={font(1.5)}>
-        {t("title.developer")}
-      </Text>
-      <Text as={"h1"} font={Font.Bold} size={font(2.5)}>
+      <Text as={"h1"} font={Font.Bold} size={font(2)}>
         {t("title.name")}
       </Text>
 
-      <Text font={Font.Medium} size={font(0.875)}>
+      <Text font={Font.Medium} size={font(0.75)}>
         {t("introduction")}
       </Text>
 
-      <Spacer height={"20px"} />
+      <Spacer height={"10px"} />
 
       <Flex>
-        <Text size={font(1)}>
+        <Text size={font(0.875)}>
           <StylessA href="mailto:dohyun682@gmail.com" hasIcon={false}>
             dohyun682@gmail.com
           </StylessA>{" "}

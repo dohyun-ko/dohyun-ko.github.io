@@ -1,4 +1,6 @@
 import { Area, Content, Spacer } from "@dohyun-ko/react-atoms";
+
+import AwardSection from "./sections/AwardsSection";
 import EducationSection from "./sections/EducationSection";
 import ExperienceSection from "./sections/ExperienceSection";
 import PublicationSection from "./sections/PublicationSection";
@@ -14,11 +16,11 @@ const PrintablePage = () => {
 
         <Spacer height={"20px"} />
 
-        <ExperienceSection />
-
-        <Spacer height={"50px"} />
-
         <SkillSection />
+
+        <Spacer height={"30px"} />
+
+        <ExperienceSection />
 
         <Spacer height={"30px"} />
 
@@ -28,9 +30,13 @@ const PrintablePage = () => {
 
         <PublicationSection />
 
-        <Spacer height={"40px"} />
+        <Spacer height={"20px"} />
 
         <SideProjectSection />
+
+        <Spacer height={"20px"} />
+
+        <AwardSection />
       </Content>
     </Area>
   );

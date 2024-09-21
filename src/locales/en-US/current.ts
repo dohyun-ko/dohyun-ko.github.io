@@ -1,7 +1,7 @@
 const current = {
   organizations: [
     {
-      name: "GIST Student Association Infoteam",
+      name: "GIST Student Council Information Bureau",
       isImportant: true,
       color: "#EB6263",
       url: "https://introduce.gistory.me/",
@@ -14,8 +14,8 @@ const current = {
           startedAt: "2022-11",
           endedAt: "2023-02",
           description:
-            "Developed the frontend for AMS, GIST's club application system. Implemented a drag-and-drop based UI to enhance the convenience of managing interview schedules, and introduced a mono-repo to reduce the rewriting of similar code.",
-          whatIDid: ["Frontend Development", "UI Design"],
+            "Developed the frontend for AMS, the GIST club application system. Implemented a drag-and-drop UI for easier interview schedule management and introduced a mono-repo to reduce code duplication.",
+          whatIDid: ["Frontend development", "UI design"],
           techStacks: ["React", "TypeScript", "mono-repo"],
         },
         {
@@ -24,18 +24,34 @@ const current = {
           url: "https://github.com/gsainfoteam/ziggle-fe",
           startedAt: "2023-04",
           description:
-            "Developing the frontend for Ziggle, GIST's integrated notice platform. Initially developed the version using React and then migrated to Next.js, actively adopting various technologies like GraphQL and Apollo Client. Successfully established within the school, maintaining 200 DAUs, which is 25% of the undergraduate population.",
-          whatIDid: ["Team Leader and Frontend Development"],
+            "Serving as the team leader and developing the frontend for Ziggle, GIST's integrated notification platform.",
+          whatIDid: [
+            "Developed the initial version with React and migrated to Next.js",
+            "Introduced various technologies including GraphQL and Apollo Client",
+            "Maintained a DAU of 200 users, representing 25% of the undergraduate population",
+          ],
           techStacks: ["React", "TypeScript", "Next.js", "Tailwind CSS"],
         },
         {
-          name: "IdP Frontend",
+          name: "Frontend Core",
           isImportant: true,
+          startedAt: "2022-09",
+          description:
+            "Focused on improving the frontend technical level within the team.",
+          whatIDid: [
+            "Introduced i18n for multilingual support",
+            "Adopted the Atomic pattern and documented with Storybook",
+            "Automated E2E testing using Playwright",
+          ],
+        },
+        {
+          name: "IdP Frontend",
+          isImportant: false,
           url: "https://idp.gistory.me",
           startedAt: "2024-03",
           description:
-            "Maintaining the frontend for IdP, GIST's OAuth2.0 authentication system.",
-          whatIDid: ["Frontend Maintenance"],
+            "Maintaining the frontend of the IdP, the OAuth2.0 authentication system used at GIST.",
+          whatIDid: ["Frontend maintenance"],
           techStacks: ["React", "TypeScript", "Tailwind CSS"],
         },
       ],
@@ -53,11 +69,11 @@ const current = {
           isImportant: true,
           startedAt: "2023-03",
           description:
-            "Conducting development exchange and sessions within Wing.",
+            "Conducting development knowledge exchange and sessions at Wing.",
           whatIDid: [
-            "Conducted a session on introducing mono-repo",
-            "Conducted a session on React.cpp",
-            "Conducted a session on writing code like a UI library: Compound Components",
+            "Led a session on introducing mono-repo",
+            "Led a session on React.cpp",
+            "Led a session on writing code like a UI library: Compound Components",
           ],
         },
       ],

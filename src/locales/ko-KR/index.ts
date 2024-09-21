@@ -4,7 +4,7 @@ import experience from "./experience";
 export const main = {
   title: { developer: "Generalist FE 개발자", name: "고도현 | Dohyun Ko" },
   introduction:
-    "스타트업의 유일한 FE 개발자로 2년간 일하며 프론트엔드, 백엔드, 앱, 자동화, ML 등 다양한 분야를 주도적으로 작업했습니다. 이후 AI 연구실에서 일하며 데이터 수집 툴을 제작했고 UX 관련 논문을 작성했습니다. 개발인력이 늘 부족한 곳에서 일했기에 생산성과 유지보수의 편의성을 중시하며 동료가 보기 쉬운 코드를 짜려 노력합니다. 유저 행동 분석도 중요시하기에 유저가 수행하는 모든 액션을 로깅하고 다양한 분석 툴 접목하기를 좋아합니다.",
+    "3년차 프론트엔드 개발자로, 스타트업과 연구실에서 웹과 앱 개발을 주도했으며, 장기 사이드 프로젝트를 통해 실제 서비스 개발 경험을 쌓았습니다. 다양한 기술 스택을 활용하여 사용자 중심의 서비스를 개발하는 데 주력합니다.",
   current,
   education: {
     attendedLectures: [
@@ -51,44 +51,6 @@ export const main = {
           "Atomic 패턴에 따라 라이브러리 개발 및 RollUp을 이용한 번들링, npm 배포",
           "Storybook을 사용한 컴포넌트 문서화",
         ],
-        techStacks: ["React", "TypeScript", "RollUp", "Storybook", "npm"],
-      },
-      {
-        name: "2024 KPMG Ideathon: 🥉 3등",
-        isImportant: true,
-        url: "https://github.com/gist-optima",
-        startedAt: "2024-01",
-        endedAt: "2024-02",
-        description:
-          "[삼정 KPMG 아이디어톤](https://kpmgkr.notion.site/kpmgkr/2024-KPMG-1fcd8a808f3d4f36a5ae8ad6e9bc413e)에 참여해 문서 작업에 VCS를 도입하고 LLM으로 맥락 유지 구글링을 구현한 플랫폼 Docuflow의 FE를 개발했습니다. [보도자료](https://www.newsworker.co.kr/news/articleView.html?idxno=322280)",
-      },
-      {
-        name: "Kaggle - Regression with a Mohs Hardness Dataset: 4등",
-        isImportant: true,
-        url: "https://www.kaggle.com/competitions/playground-series-s3e25",
-        startedAt: "2023-10",
-        endedAt: "2023-12",
-        description:
-          "Kaggle의 광물 모스 경도 예측 대회에서 4등을 차지했습니다. 점수 공식이 MedAE인 점을 이용해 독특한 후처리 기법을 사용했습니다.",
-      },
-      {
-        name: "2023 Creative Space G A.I. & IoT Makerthon: 🥈 2등",
-        isImportant: false,
-        startedAt: "2023-10",
-        endedAt: "2023-11",
-        description:
-          "메이커톤에서 GPT-4 API와 라즈베리파이를 결합해 일상 대화에서 의미를 추론하고 스위치, 스피커 등 IoT 기기를 조작하는 AI 비서를 개발했습니다.",
-        whatIDid: ["OpenAI API 연동", "기획 및 발표자료 준비"],
-        techStacks: ["Python"],
-      },
-      {
-        name: "2023 Net Challenge: 🥈 은상",
-        isImportant: true,
-        url: "https://github.com/Net-Challenge-InfoTeam",
-        startedAt: "2023-06",
-        endedAt: "2023-12",
-        description:
-          "CCTV 데이터를 AI로 분석해 실시간으로 위협을 감지하고, 위협이 감지되면 주변 유저들에게 알림을 보내며 지도에 표시해주는 PWA 앱을 개발했습니다.",
       },
       {
         name: "Dutch: OOP Final Project",
@@ -114,6 +76,37 @@ export const main = {
           "편의점 음식별로 페르소나를 설정하고 바코드를 스캔하면 서로 간의 대화를 생성해주는 서비스입니다. 프론트엔드에서의 바코드 인식이 challenge였습니다.",
         whatIDid: ["프론트엔드 개발", "백엔드 개발", "프롬프팅"],
         techStacks: ["React", "TypeScript", "FastAPI", "PostgreSQL"],
+      },
+    ],
+  },
+  award: {
+    list: [
+      {
+        name: "2024 KPMG Ideathon: 🥉 3등",
+        isImportant: true,
+        url: "https://github.com/gist-optima",
+        startedAt: "2024-01",
+        endedAt: "2024-02",
+      },
+      {
+        name: "Kaggle - Mohs Hardness Dataset: 4등",
+        isImportant: true,
+        url: "https://kaggle.com/competitions/playground-series-s3e25",
+        startedAt: "2023-10",
+        endedAt: "2023-12",
+      },
+      {
+        name: "2023 Creative Space G A.I. & IoT Makerthon: 🥈 2등",
+        isImportant: false,
+        startedAt: "2023-10",
+        endedAt: "2023-11",
+      },
+      {
+        name: "2023 Net Challenge: 🥈 은상",
+        isImportant: true,
+        url: "https://github.com/Net-Challenge-InfoTeam",
+        startedAt: "2023-06",
+        endedAt: "2023-12",
       },
     ],
   },

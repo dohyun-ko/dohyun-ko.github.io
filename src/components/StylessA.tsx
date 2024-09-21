@@ -16,6 +16,7 @@ const StylessA = ({ href, children, hasIcon = true }: StylessAProps) => {
         color: "inherit",
         display: "inline-flex",
         gap: "5px",
+        alignItems: "center",
       }}
     >
       {children}

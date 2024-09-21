@@ -10,7 +10,7 @@ const SectionTitle = ({ children }: SectionTitleProps) => {
   const { font } = useResponsiveFont();
 
   return (
-    <Text as="h1" font={Font.Bold} size={font(1.375)}>
+    <Text as="h1" font={Font.Bold} size={font(1.25)}>
       {children}
     </Text>
   );
