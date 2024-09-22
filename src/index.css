@@ -64,3 +64,10 @@ p {
   src: url("./assets/fonts/pretendard/Pretendard-Black.woff");
   font-weight: 900;
 }
+
+.source-code-pro {
+  font-family: "Source Code Pro", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}

@@ -8,6 +8,7 @@ enum Font {
   Bold = "PretendardW700",
   ExtraBold = "PretendardW800",
   Black = "PretendardW900",
+  SourceCodePro = "Source Code Pro",
 }
 
 export default Font;

@@ -53,7 +53,7 @@ const experience = {
           startedAt: "2022-08",
           endedAt: "2023-03",
           description:
-            "AI 기반으로 강아지 사이즈를 측정하고, 맞는 옷을 추천해주는 쇼핑몰 Doggly(유저수 2000+)의 FE를 개발했습니다.",
+            "AI 기반으로 강아지 사이즈를 측정하고, 맞는 옷을 추천해주는 쇼핑몰 Doggly(MAU 3000+)의 FE를 개발했습니다.",
           whatIDid: [
             "쇼핑몰, 판매자 페이지, 관리자 페이지 프론트엔드 대부분 개발, 반응형 & 다국어 작업 및 유지보수",
             "PWA & Jetpack Compose & SwiftUI 웹뷰 앱 개발 및 결제 모듈 연동",

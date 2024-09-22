@@ -1,4 +1,5 @@
 import { Spacer } from "@dohyun-ko/react-atoms";
+import AwardSection from "./sections/\bAwardSection";
 import CurrentSection from "./sections/CurrentSection";
 import EducationSection from "./sections/EducationSection";
 import ExperienceSection from "./sections/ExperienceSection";
@@ -44,6 +45,10 @@ const ResumePage = ({}: ResumePageProps) => {
       <Spacer height={"50px"} />
 
       <SideProjectSection />
+
+      <Spacer height={"50px"} />
+
+      <AwardSection />
 
       <Spacer height={"150px"} />
     </>

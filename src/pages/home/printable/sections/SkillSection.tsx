@@ -72,11 +72,15 @@ const SkillSection = ({}: SkillSectionProps) => {
       <Grid gridTemplateColumns="70px 1fr" gap={"0px"}>
         <Text>전문:</Text>
 
-        <Text>React &nbsp; TypeScript &nbsp; Next.js</Text>
+        <Text font={Font.SourceCodePro} className={"source-code-pro"}>
+          React&nbsp; TypeScript&nbsp; Next.js
+        </Text>
 
         <Text>활용:</Text>
 
-        <Text>Python &nbsp; NestJS &nbsp; FastAPI &nbsp; Flutter</Text>
+        <Text font={Font.SourceCodePro}>
+          Python&nbsp; NestJS&nbsp; FastAPI&nbsp; Flutter
+        </Text>
       </Grid>
     </>
   );
