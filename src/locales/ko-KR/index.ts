@@ -61,7 +61,7 @@ export const main = {
         description:
           "프론트엔드와 백엔드 모두 C++로만 작성된 더치페이 플랫폼입니다. Emscripten을 이용해 C++를 Web Assembly로 트랜스파일할 수 있다는 점을 이용했습니다. [발표자료](https://docs.google.com/presentation/d/1z5m_s2rTHaUCb3rpHDB-zI-1NMvKHpysNDFqbwSA2LE/edit?usp=sharing)",
         whatIDid: [
-          "React의 navigator, state, router, function component, style 등 핵심 기능을 C++로 구현",
+          "React의 핵심 기능(navigator, state, router, function component, style 등)을 C++로 구현",
           "React, Flutter와 비슷한 형태의 프레임워크 개발",
           "브라우저 환경에서 성능 테스트 결과 해시 반복 연산 작업에서 React보다 110배 가량 빠른 성능을 보임",
         ],
