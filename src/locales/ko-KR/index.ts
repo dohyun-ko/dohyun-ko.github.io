@@ -2,7 +2,10 @@ import current from "./current";
 import experience from "./experience";
 
 export const main = {
-  title: { developer: "Generalist FE 개발자", name: "고도현 | Dohyun Ko" },
+  title: {
+    developer: "Generalist FE 개발자",
+    name: "고도현 | Dohyun Ko | 산업기능요원 보충역",
+  },
   introduction:
     "3년차 프론트엔드 개발자로, 스타트업과 연구실에서 웹과 앱 개발을 주도했으며, 장기 사이드 프로젝트를 통해 실제 서비스 개발 경험을 쌓았습니다. 다양한 기술 스택을 활용하여 사용자 중심의 서비스를 개발하는 데 주력합니다.",
   current,
