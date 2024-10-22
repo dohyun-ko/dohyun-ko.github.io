@@ -4,7 +4,7 @@ import experience from "./experience";
 export const main = {
   title: { developer: "Generalist Frontend Developer", name: "Dohyun Ko" },
   introduction:
-    "As a third-year frontend developer, I have led web and app development at startups and research labs, and have gained real service development experience through long-term side projects. I focus on developing user-centric services by utilizing a wide range of tech stacks.",
+    "A front-end developer, I have led web and app development in startups and labs, with extensive experience from early development to user analytics. \n Focused on developing user-centered services utilizing a diverse technology stack. I also run conferences and work to vitalize the local developer ecosystem",
   current,
   education: {
     attendedLectures: [
