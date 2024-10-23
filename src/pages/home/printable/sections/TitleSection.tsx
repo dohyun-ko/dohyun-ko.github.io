@@ -31,6 +31,13 @@ const TitleSection = ({}: TitleSectionProps) => {
           <StylessA href="https://github.com/dohyun-ko" hasIcon={false}>
             github.com/dohyun-ko
           </StylessA>{" "}
+          |{" "}
+          <StylessA
+            href="https://www.linkedin.com/in/dohyun-ko-92b885212"
+            hasIcon={false}
+          >
+            linkedin.com/in/dohyun-ko-92b885212
+          </StylessA>
           <br />
           Detailed Resume:{" "}
           <StylessA href="https://dohyun.is-a.dev/resume" hasIcon={false}>
