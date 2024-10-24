@@ -1,4 +1,4 @@
-import useIsMobile from "./useIsMobile";
+import useIsMobile from './useIsMobile';
 
 const useResponsiveFont = () => {
   const isMobile = useIsMobile();
@@ -15,7 +15,7 @@ const useResponsiveFont = () => {
           }
         })();
 
-    return resized.toString() + "rem";
+    return `text-[${resized.toString()}rem]`;
   };
 
   return { font };

@@ -1,11 +1,9 @@
-import StylessA from "@/components/StylessA";
-import useResponsiveFont from "@/hooks/useResponsiveFont";
-import Font from "@/types/Font";
-import Organization from "@/types/Organization";
-import { formatYearMonth } from "@/utils/dateFormats";
-import { Flex, Text } from "@dohyun-ko/react-atoms";
-import Card from "./Card";
-import ProjectCard from "./ProjectCard";
+import StylessA from '@/components/StylessA';
+import useResponsiveFont from '@/hooks/useResponsiveFont';
+import Organization from '@/types/Organization';
+import { formatYearMonth } from '@/utils/dateFormats';
+import { twMerge } from 'tailwind-merge';
+import ProjectCard from './ProjectCard';
 
 interface OrganizationCardProps {
   organization: Organization;
@@ -16,34 +14,31 @@ const OrganizationCard = ({ organization }: OrganizationCardProps) => {
   const { font } = useResponsiveFont();
 
   return (
-    <Card>
-      <Flex
-        flexDirection="column"
-        style={{
-          borderLeft: `5px solid ${color || "gray"}`,
-          paddingLeft: "10px",
-        }}
+    <div className={'Card'}>
+      <div
+        className={twMerge(
+          'flex flex-col border-l-[5px] border-solid pl-[10px]',
+          color ? `border-[${color}]` : 'border-gray-400',
+        )}
       >
         <StylessA href={url}>
-          <Text font={Font.Bold} size={font(2)}>
-            {name}
-          </Text>
+          <span className={`font-bold text-[${font(2)}]`}>{name}</span>
         </StylessA>
 
-        <Text>{job}</Text>
+        <span>{job}</span>
 
-        <Text>
-          {formatYearMonth(new Date(startedAt))} –{" "}
-          {endedAt ? formatYearMonth(new Date(endedAt)) : "Now"}
-        </Text>
-      </Flex>
+        <span>
+          {formatYearMonth(new Date(startedAt))} –{' '}
+          {endedAt ? formatYearMonth(new Date(endedAt)) : 'Now'}
+        </span>
+      </div>
 
-      <Flex flexDirection="column" gap={"20px"}>
+      <div className={'flex flex-col gap-5'}>
         {organization.projects.map((project) => (
           <ProjectCard key={project.name} project={project} />
         ))}
-      </Flex>
-    </Card>
+      </div>
+    </div>
   );
 };
 

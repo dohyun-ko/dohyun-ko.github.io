@@ -1,5 +1,6 @@
 export default {
   plugins: [
+    'gatsby-plugin-postcss',
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -12,21 +13,21 @@ export default {
       options: {
         languages: [`en`, `ko`],
         localeJsonSourceName: `locale`, // name given to `gatsby-source-filesystem` plugin.
-        defaultLanguage: `en`,
+        defaultLanguage: `ko`,
         // you can pass any i18next options
         i18nextOptions: {
           interpolation: {
             escapeValue: false, // not needed for react as it escapes by default
           },
-          keySeparator: ".",
+          keySeparator: '.',
         },
         pages: [
           {
-            matchPath: "/:lang?",
+            matchPath: '/:lang?',
             getLanguageFromPath: true,
           },
           {
-            matchPath: "/:lang?/resume",
+            matchPath: '/:lang?/resume',
             getLanguageFromPath: true,
           },
         ],

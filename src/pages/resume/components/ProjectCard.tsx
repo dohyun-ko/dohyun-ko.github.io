@@ -1,11 +1,10 @@
-import StylessA from "@/components/StylessA";
-import useIsMobile from "@/hooks/useIsMobile";
-import useResponsiveFont from "@/hooks/useResponsiveFont";
-import Font from "@/types/Font";
-import Project from "@/types/Project";
-import { formatYearMonth } from "@/utils/dateFormats";
-import { Flex, Text } from "@dohyun-ko/react-atoms";
-import ReactMarkdown from "react-markdown";
+import StylessA from '@/components/StylessA';
+import useResponsiveFont from '@/hooks/useResponsiveFont';
+import Project from '@/types/Project';
+import { formatYearMonth } from '@/utils/dateFormats';
+import { useTranslation } from 'gatsby-plugin-react-i18next';
+import ReactMarkdown from 'react-markdown';
+import { twMerge } from 'tailwind-merge';
 
 interface ProjectCardProps {
   project: Project;
@@ -15,46 +14,45 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
   const { name, url, description, whatIDid, techStacks, startedAt, endedAt } =
     project;
   const { font } = useResponsiveFont();
-  const isMobile = useIsMobile();
+  const { t } = useTranslation();
 
   return (
-    <Flex flexDirection="column">
+    <div className={'flex flex-col'}>
       <StylessA href={url}>
-        <Text font={Font.SemiBold} size={font(1.75)}>
-          {name}
-        </Text>
+        <span className={twMerge('font-semibold', font(1.75))}>{name}</span>
       </StylessA>
 
-      <Text>
-        {formatYearMonth(new Date(startedAt))} –{" "}
-        {endedAt ? formatYearMonth(new Date(endedAt)) : "Now"}
-      </Text>
+      <span>
+        {formatYearMonth(new Date(startedAt))} –{' '}
+        {endedAt ? formatYearMonth(new Date(endedAt)) : 'Now'}
+      </span>
 
       <ReactMarkdown>{description}</ReactMarkdown>
 
       {whatIDid && whatIDid.length > 0 && (
         <ul
           style={{
-            margin: "0px",
-            paddingLeft: "20px",
+            margin: '0px',
+            paddingLeft: '20px',
           }}
         >
           {whatIDid.map((whatIDid) => (
             <li key={whatIDid}>
-              <Text size={font(1)}>{whatIDid}</Text>
+              <p className={font(1)}>{whatIDid}</p>
             </li>
           ))}
 
           {techStacks && techStacks.length > 0 && (
             <li>
-              <Text size={font(1)}>
-                사용 기술: {techStacks.map((techStack) => techStack).join(", ")}
-              </Text>
+              <p className={font(1)}>
+                {t('common.')}:{' '}
+                {techStacks.map((techStack) => techStack).join(', ')}
+              </p>
             </li>
           )}
         </ul>
       )}
-    </Flex>
+    </div>
   );
 };
 

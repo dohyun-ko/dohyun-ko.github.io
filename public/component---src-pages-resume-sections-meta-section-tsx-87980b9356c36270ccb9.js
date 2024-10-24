@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkdohyun_ko_github_io=self.webpackChunkdohyun_ko_github_io||[]).push([[589],{5954:function(e,s,t){t.r(s);var a=t(4848);s.default=e=>{let{}=e;return(0,a.jsx)("div",{className:"Area",id:"meta-section",children:(0,a.jsx)("div",{className:"Content",children:(0,a.jsx)("div",{className:"flex",children:(0,a.jsx)("p",{className:"text-[1.25rem] font-thin",children:"Last update: 2024-09-22"})})})})}}}]);
+//# sourceMappingURL=component---src-pages-resume-sections-meta-section-tsx-87980b9356c36270ccb9.js.map

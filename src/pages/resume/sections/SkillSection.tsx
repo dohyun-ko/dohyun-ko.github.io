@@ -1,22 +1,20 @@
-import Font from "@/types/Font";
-import { Area, Content, Grid, Spacer, Text } from "@dohyun-ko/react-atoms";
-import { useTranslation } from "react-i18next";
-import SectionTitle from "../components/SectionTitle";
+import { useTranslation } from 'react-i18next';
+import SectionTitle from '../components/SectionTitle';
 
-const mapFont = (level: number): Font => {
+const mapFont = (level: number) => {
   switch (level) {
     case 1:
-      return Font.Thin;
+      return 'font-thin';
     case 2:
-      return Font.Light;
+      return 'font-light';
     case 3:
-      return Font.Medium;
+      return 'font-medium';
     case 4:
-      return Font.Bold;
+      return 'font-bold';
     case 5:
-      return Font.Black;
+      return 'font-black';
     default:
-      return Font.Regular;
+      return 'font-normal';
   }
 };
 
@@ -24,51 +22,51 @@ interface SkillSectionProps {}
 
 const skills = [
   {
-    name: "React",
+    name: 'React',
     level: 5,
   },
   {
-    name: "TypeScript",
+    name: 'TypeScript',
     level: 4,
   },
   {
-    name: "Next.js",
+    name: 'Next.js',
     level: 3,
   },
   {
-    name: "Python",
+    name: 'Python',
     level: 3,
   },
   {
-    name: "NestJS",
+    name: 'NestJS',
     level: 2,
   },
   {
-    name: "FastAPI",
+    name: 'FastAPI',
     level: 2,
   },
   {
-    name: "Flutter",
+    name: 'Flutter',
     level: 2,
   },
   {
-    name: "C++",
+    name: 'C++',
     level: 2,
   },
   {
-    name: "Kotlin",
+    name: 'Kotlin',
     level: 1,
   },
   {
-    name: "Docker",
+    name: 'Docker',
     level: 1,
   },
   {
-    name: "Rust",
+    name: 'Rust',
     level: 1,
   },
   {
-    name: "Assembly",
+    name: 'Assembly',
     level: 1,
   },
 ];
@@ -77,21 +75,21 @@ const SkillSection = ({}: SkillSectionProps) => {
   const { t } = useTranslation();
 
   return (
-    <Area id="skill-section">
-      <Content>
+    <div className={'Area'} id="skill-section">
+      <div className={'Content'}>
         <SectionTitle>Skills</SectionTitle>
 
-        <Spacer height={"30px"} />
+        <div className={'h-[30px]'} />
 
-        <Grid gridTemplateColumns="1fr 1fr 1fr" gap={"10px"}>
+        <div className={'grid grid-cols-3 gap-[10px]'}>
           {skills.map((skill) => (
-            <Text key={skill.name} font={mapFont(skill.level)}>
+            <span className={mapFont(skill.level)} key={skill.name}>
               {skill.name}
-            </Text>
+            </span>
           ))}
-        </Grid>
-      </Content>
-    </Area>
+        </div>
+      </div>
+    </div>
   );
 };
 

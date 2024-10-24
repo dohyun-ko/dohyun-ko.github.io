@@ -1,11 +1,10 @@
-import StylessA from "@/components/StylessA";
-import useIsMobile from "@/hooks/useIsMobile";
-import useResponsiveFont from "@/hooks/useResponsiveFont";
-import Font from "@/types/Font";
-import Publication from "@/types/Publication";
-import { formatYearMonth } from "@/utils/dateFormats";
-import { Flex, Text } from "@dohyun-ko/react-atoms";
-import ReactMarkdown from "react-markdown";
+import StylessA from '@/components/StylessA';
+import useIsMobile from '@/hooks/useIsMobile';
+import useResponsiveFont from '@/hooks/useResponsiveFont';
+import Publication from '@/types/Publication';
+import { formatYearMonth } from '@/utils/dateFormats';
+import ReactMarkdown from 'react-markdown';
+import { twMerge } from 'tailwind-merge';
 
 interface PublicationCardProps {
   publication: Publication;
@@ -17,19 +16,19 @@ const PublicationCard = ({ publication }: PublicationCardProps) => {
   const isMobile = useIsMobile();
 
   return (
-    <Flex flexDirection="column">
+    <div className={'flex flex-col'}>
       <StylessA href={url}>
-        <Text font={Font.SemiBold} size={font(1.5)}>
+        <h3 className={twMerge('font-semibold', `text-[${font(1.5)}]`)}>
           {name}
-        </Text>
+        </h3>
       </StylessA>
 
-      <Text>
+      <span>
         {publisher} - {formatYearMonth(new Date(date))}
-      </Text>
+      </span>
 
       <ReactMarkdown>{description}</ReactMarkdown>
-    </Flex>
+    </div>
   );
 };
 

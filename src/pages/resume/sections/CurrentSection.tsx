@@ -1,8 +1,7 @@
-import Organization from "@/types/Organization";
-import { Area, Content, Flex, Spacer } from "@dohyun-ko/react-atoms";
-import { useTranslation } from "react-i18next";
-import OrganizationCard from "../components/OrganizationCard";
-import SectionTitle from "../components/SectionTitle";
+import Organization from '@/types/Organization';
+import { useTranslation } from 'react-i18next';
+import OrganizationCard from '../components/OrganizationCard';
+import SectionTitle from '../components/SectionTitle';
 
 interface CurrentPageProps {}
 
@@ -10,15 +9,15 @@ const CurrentSection = ({}: CurrentPageProps) => {
   const { t } = useTranslation();
 
   return (
-    <Area id="current-section">
-      <Content>
+    <div className={'Area'} id="current-section">
+      <div className={'Content'}>
         <SectionTitle>Currently working in</SectionTitle>
 
-        <Spacer height={"30px"} />
+        <div className={'h-[30px]'} />
 
-        <Flex flexDirection="column" gap={"35px"}>
+        <div className={'flex flex-col gap-[35px]'}>
           {(
-            t("current", { returnObjects: true }) as {
+            t('current', { returnObjects: true }) as {
               organizations: Organization[];
             }
           ).organizations.map((organization) => (
@@ -27,9 +26,9 @@ const CurrentSection = ({}: CurrentPageProps) => {
               organization={organization}
             />
           ))}
-        </Flex>
-      </Content>
-    </Area>
+        </div>
+      </div>
+    </div>
   );
 };
 

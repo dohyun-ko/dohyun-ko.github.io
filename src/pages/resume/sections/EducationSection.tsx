@@ -1,10 +1,8 @@
-import useResponsiveFont from "@/hooks/useResponsiveFont";
-import Font from "@/types/Font";
-import { Area, Content, Flex, Spacer, Text } from "@dohyun-ko/react-atoms";
-import { useTranslation } from "gatsby-plugin-react-i18next";
-import React from "react";
-import Card from "../components/Card";
-import SectionTitle from "../components/SectionTitle";
+import useResponsiveFont from '@/hooks/useResponsiveFont';
+import { useTranslation } from 'gatsby-plugin-react-i18next';
+import React from 'react';
+import { twMerge } from 'tailwind-merge';
+import SectionTitle from '../components/SectionTitle';
 
 interface EducationSectionProps {}
 
@@ -13,57 +11,53 @@ const EducationSection = ({}: EducationSectionProps) => {
   const { font } = useResponsiveFont();
 
   return (
-    <Area id="education-section">
-      <Content>
+    <div className={'Area'} id="education-section">
+      <div className={'Content'}>
         <SectionTitle>Educations</SectionTitle>
 
-        <Spacer height={"30px"} />
+        <div className={'h-[30px]'} />
 
-        <Card>
-          <Flex
-            gap={"20px"}
-            style={{
-              borderLeft: `5px solid #EB0D00`,
-              paddingLeft: "10px",
-            }}
+        <div className={'Card'}>
+          <div
+            className={'flex gap-5 border-l-[4px] border-[#EB0D00] pl-[10px]'}
           >
-            <Flex flexDirection={"column"} gap={"30px"}>
-              <Flex flexDirection={"column"}>
-                <Text font={Font.Bold} size={font(2)}>
+            <div className={'flex flex-col gap-[30px]'}>
+              <div className={'flex flex-col'}>
+                <h3 className={twMerge('font-bold', `text-[${font(2)}]`)}>
                   GIST
-                </Text>
-                <Text size={"1rem"}>{t("education.major")}</Text>
-                <Text size={"1rem"}>2022. 2 – </Text>
-              </Flex>
-            </Flex>
+                </h3>
+                <span>{t('education.major')}</span>
+                <span>2022. 2 – </span>
+              </div>
+            </div>
 
-            <Text size={"1rem"}>TGPA 4.04 / 4.5</Text>
-          </Flex>
+            <span>TGPA 4.04 / 4.5</span>
+          </div>
 
-          <Flex flexDirection={"column"} width={"100%"} gap={"10px"}>
-            <Text size={"1.125rem"} weight={"bold"}>
-              {t("education.attendedLecture")}
-            </Text>
+          <div className={'flex w-full flex-col gap-[10px]'}>
+            <span className={'text-[1.125rem] font-bold'}>
+              {t('education.attendedLecture')}
+            </span>
 
-            <Flex gap={"0 10px"} wrap={"wrap"}>
-              <Text>
+            <div className={'flex-wrap gap-[0_10px]'}>
+              <p>
                 {(
-                  t("education.attendedLectures", {
+                  t('education.attendedLectures', {
                     returnObjects: true,
                   }) as string[]
                 ).map((item, index, array) => (
                   <React.Fragment key={item}>
                     {index < array.length - 1
-                      ? [item, <span style={{ padding: "0 6px" }}>|</span>]
+                      ? [item, <span style={{ padding: '0 6px' }}>|</span>]
                       : item}
                   </React.Fragment>
                 ))}
-              </Text>
-            </Flex>
-          </Flex>
-        </Card>
-      </Content>
-    </Area>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 };
 
