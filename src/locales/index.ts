@@ -2,8 +2,8 @@ import i18next from "i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
 import { initReactI18next } from "react-i18next";
 
-import * as en from "./en-US";
-import * as ko from "./ko-KR";
+import * as en from "./en/translation.mjs";
+import * as ko from "./ko/index.mjs";
 
 const resources = {
   "ko-KR": { ...ko },

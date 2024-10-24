@@ -1,10 +1,7 @@
 import { MyThemeProvider } from "@dohyun-ko/react-atoms";
-import { useAtom } from "jotai";
 import React from "react";
 import { Outlet } from "react-router-dom";
-import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { modalListAtom } from "store";
 import styled, { keyframes } from "styled-components";
 
 const fadeIn = keyframes`
@@ -42,35 +39,9 @@ export const ModalBackdrop = styled.div`
 `;
 
 const Layout: React.FC = () => {
-  const [modalList, setModalList] = useAtom(modalListAtom);
-
   return (
     <MyThemeProvider>
       <Outlet />
-
-      {modalList.map((modal, index) => (
-        <ModalBackdrop
-          onClick={() => setModalList([])}
-          key={index}
-          style={{
-            zIndex: 10 + index,
-          }}
-        >
-          {modal}
-        </ModalBackdrop>
-      ))}
-      <ToastContainer
-        position="bottom-center"
-        autoClose={3000}
-        hideProgressBar={false}
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        limit={3}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-      />
     </MyThemeProvider>
   );
 };
