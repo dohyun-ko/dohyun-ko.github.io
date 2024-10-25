@@ -1,4 +1,4 @@
-import useResponsiveFont from '@/hooks/useResponsiveFont';
+import font from '@/utils/font';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
 import React from 'react';
 import { twMerge } from 'tailwind-merge';
@@ -7,11 +7,10 @@ import SectionTitle from '../components/SectionTitle';
 interface EducationSectionProps {}
 
 const EducationSection = ({}: EducationSectionProps) => {
-  const { t, i18n } = useTranslation();
-  const { font } = useResponsiveFont();
+  const { t } = useTranslation();
 
   return (
-    <div className={'Area'} id="education-section">
+    <section className={'Area'} id="education-section">
       <div className={'Content'}>
         <SectionTitle>Educations</SectionTitle>
 
@@ -19,13 +18,13 @@ const EducationSection = ({}: EducationSectionProps) => {
 
         <div className={'Card'}>
           <div
-            className={'flex gap-5 border-l-[4px] border-[#EB0D00] pl-[10px]'}
+            className={'flex gap-5 border-l-[5px] border-[#EB0D00] pl-[10px]'}
           >
             <div className={'flex flex-col gap-[30px]'}>
               <div className={'flex flex-col'}>
-                <h3 className={twMerge('font-bold', `text-[${font(2)}]`)}>
+                <h2 className={twMerge('font-bold', `text-[${font(2)}]`)}>
                   GIST
-                </h3>
+                </h2>
                 <span>{t('education.major')}</span>
                 <span>2022. 2 – </span>
               </div>
@@ -57,7 +56,7 @@ const EducationSection = ({}: EducationSectionProps) => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

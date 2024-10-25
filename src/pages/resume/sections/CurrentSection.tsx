@@ -9,7 +9,7 @@ const CurrentSection = ({}: CurrentPageProps) => {
   const { t } = useTranslation();
 
   return (
-    <div className={'Area'} id="current-section">
+    <section className={'Area'} id="current-section">
       <div className={'Content'}>
         <SectionTitle>Currently working in</SectionTitle>
 
@@ -28,7 +28,7 @@ const CurrentSection = ({}: CurrentPageProps) => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

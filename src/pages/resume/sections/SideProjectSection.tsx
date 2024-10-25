@@ -9,7 +9,7 @@ const SideProjectSection = ({}: SideProjectSectionProps) => {
   const { t } = useTranslation();
 
   return (
-    <div className={'Area'} id="side-project-section">
+    <section className={'Area'} id="side-project-section">
       <div className={'Content'}>
         <SectionTitle>Side Projects</SectionTitle>
 
@@ -23,7 +23,7 @@ const SideProjectSection = ({}: SideProjectSectionProps) => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

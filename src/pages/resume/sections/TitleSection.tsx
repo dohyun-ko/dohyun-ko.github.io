@@ -1,5 +1,5 @@
 import StylessA from '@/components/StylessA';
-import useResponsiveFont from '@/hooks/useResponsiveFont';
+import font from '@/utils/font';
 import { useTranslation } from 'react-i18next';
 import { twMerge } from 'tailwind-merge';
 
@@ -7,10 +7,9 @@ interface TitleSectionProps {}
 
 const TitleSection = ({}: TitleSectionProps) => {
   const { t } = useTranslation();
-  const { font } = useResponsiveFont();
 
   return (
-    <div className={'Area'} id="title-section">
+    <section className={'Area'} id="title-section">
       <div className={'Content'}>
         <h1 className={twMerge('font-thin', font(2))}>
           {t('title.developer')}
@@ -47,7 +46,7 @@ const TitleSection = ({}: TitleSectionProps) => {
           </p>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

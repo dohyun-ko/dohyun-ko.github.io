@@ -1,4 +1,3 @@
-import { useTranslation } from 'react-i18next';
 import SectionTitle from '../components/SectionTitle';
 
 const mapFont = (level: number) => {
@@ -72,10 +71,8 @@ const skills = [
 ];
 
 const SkillSection = ({}: SkillSectionProps) => {
-  const { t } = useTranslation();
-
   return (
-    <div className={'Area'} id="skill-section">
+    <section className={'Area'} id="skill-section">
       <div className={'Content'}>
         <SectionTitle>Skills</SectionTitle>
 
@@ -89,7 +86,7 @@ const SkillSection = ({}: SkillSectionProps) => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

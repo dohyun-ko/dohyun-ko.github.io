@@ -1,12 +1,11 @@
-import useIsMobile from "@/hooks/useIsMobile";
-import useResponsiveFont from "@/hooks/useResponsiveFont";
-import Font from "@/types/Font";
-import Project from "@/types/Project";
-import { formatYearMonth } from "@/utils/dateFormats";
-import formatUrl from "@/utils/formatUrl";
-import { Flex, Spacer, Text } from "@dohyun-ko/react-atoms";
-import ReactMarkdown from "react-markdown";
-import StylessA from "../../../components/StylessA";
+import useIsMobile from '@/hooks/useIsMobile';
+import Project from '@/types/Project';
+import { formatYearMonth } from '@/utils/dateFormats';
+import font from '@/utils/font';
+import formatUrl from '@/utils/formatUrl';
+import ReactMarkdown from 'react-markdown';
+import { twMerge } from 'tailwind-merge';
+import StylessA from '../../../components/StylessA';
 
 interface ProjectCardProps {
   project: Project;
@@ -15,55 +14,42 @@ interface ProjectCardProps {
 const ProjectCard = ({ project }: ProjectCardProps) => {
   const { name, url, description, whatIDid, techStacks, startedAt, endedAt } =
     project;
-  const { font } = useResponsiveFont();
   const isMobile = useIsMobile();
 
   return (
-    <Flex
-      flexDirection="column"
-      style={{
-        fontSize: "0.75rem",
-      }}
-    >
+    <div className={twMerge('flex-col', font(0.75))}>
       <StylessA href={url}>
-        <Text font={Font.SemiBold} size={font(1)}>
-          {name}
-        </Text>
+        <h3 className={twMerge('font-semibold', font(1))}>{name}</h3>
 
-        {url && <Text size={font(0.75)}>{formatUrl(url)}</Text>}
+        {url && <span className={font(0.75)}>{formatUrl(url)}</span>}
       </StylessA>
 
-      <Text size={font(0.75)}>
-        {formatYearMonth(new Date(startedAt))} –{" "}
-        {endedAt ? formatYearMonth(new Date(endedAt)) : "Now"}
-      </Text>
+      <span className={font(0.75)}>
+        {formatYearMonth(new Date(startedAt))} –{' '}
+        {endedAt ? formatYearMonth(new Date(endedAt)) : 'Now'}
+      </span>
 
       {description && (
         <>
-          <Spacer height={"5px"} />
+          <div className={'h-[5px]'} />
           <ReactMarkdown>{description}</ReactMarkdown>
         </>
       )}
 
       {whatIDid && whatIDid.length > 0 && (
         <>
-          <Spacer height={"5px"} />
+          <div className={'h-[5px]'} />
 
-          <ul
-            style={{
-              margin: "0px",
-              paddingLeft: "20px",
-            }}
-          >
+          <ul className={'m-0 list-disc pl-5'}>
             {whatIDid.map((whatIDid) => (
               <li key={whatIDid}>
-                <Text size={font(0.75)}>{whatIDid}</Text>
+                <p className={font(0.75)}>{whatIDid}</p>
               </li>
             ))}
           </ul>
         </>
       )}
-    </Flex>
+    </div>
   );
 };
 

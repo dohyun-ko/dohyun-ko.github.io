@@ -1,8 +1,7 @@
-import Project from "@/types/Project";
-import { Flex, Spacer } from "@dohyun-ko/react-atoms";
-import { useTranslation } from "react-i18next";
-import ProjectCard from "../components/ProjectCard";
-import SectionTitle from "../components/SectionTitle";
+import Project from '@/types/Project';
+import { useTranslation } from 'react-i18next';
+import ProjectCard from '../components/ProjectCard';
+import SectionTitle from '../components/SectionTitle';
 
 interface AwardSection {}
 
@@ -13,15 +12,15 @@ const AwardSection = ({}: AwardSection) => {
     <>
       <SectionTitle>Awards</SectionTitle>
 
-      <Spacer height={"10px"} />
+      <div className={'h-[10px]'} />
 
-      <Flex flexDirection={"column"} gap={"0px"}>
-        {(t("award.list", { returnObjects: true }) as Project[])
+      <div className={'flex flex-col'}>
+        {(t('award.list', { returnObjects: true }) as Project[])
           .filter((award) => award.isImportant)
           .map((award) => (
             <ProjectCard key={award.name} project={award} />
           ))}
-      </Flex>
+      </div>
     </>
   );
 };

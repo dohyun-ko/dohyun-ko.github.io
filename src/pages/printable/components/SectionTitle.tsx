@@ -1,19 +1,13 @@
-import useResponsiveFont from "@/hooks/useResponsiveFont";
-import Font from "@/types/Font";
-import { Text } from "@dohyun-ko/react-atoms";
+import font from '@/utils/font';
+import { twMerge } from 'tailwind-merge';
 
 interface SectionTitleProps {
   children?: React.ReactNode;
 }
 
 const SectionTitle = ({ children }: SectionTitleProps) => {
-  const { font } = useResponsiveFont();
-
-  return (
-    <Text as="h1" font={Font.Bold} size={font(1.25)}>
-      {children}
-    </Text>
-  );
+  return <h2 className={twMerge('font-bold', font(1.25))}>{children}</h2>;
+  // set to h2 instead of h1 since printable resume does not have section tags
 };
 
 export default SectionTitle;

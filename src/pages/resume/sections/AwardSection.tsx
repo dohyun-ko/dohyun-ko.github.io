@@ -9,7 +9,7 @@ const AwardSection = ({}: AwardSection) => {
   const { t } = useTranslation();
 
   return (
-    <div className={'Area'} id="side-project-section">
+    <section className={'Area'} id="side-project-section">
       <div className={'Content'}>
         <SectionTitle>Awards</SectionTitle>
 
@@ -23,7 +23,7 @@ const AwardSection = ({}: AwardSection) => {
           )}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

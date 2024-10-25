@@ -1,5 +1,6 @@
 import LinkIcon from '@/assets/icons/link.svg';
 import React from 'react';
+import { twMerge } from 'tailwind-merge';
 
 interface StylessAProps {
   href?: string;
@@ -19,20 +20,15 @@ const StylessA = ({
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      style={{
-        color: 'inherit',
-        display: 'inline-flex',
-        gap: '5px',
-        alignItems: 'center',
-      }}
-      className={className}
+      className={twMerge(
+        'inline-flex items-center gap-[5px] text-inherit underline',
+        className,
+      )}
       {...props}
     >
       {children}
 
-      {href && hasIcon && (
-        <img src={LinkIcon} className={'min-w-4 md:min-w-6'} />
-      )}
+      {href && hasIcon && <img src={LinkIcon} className={'min-w-4'} />}
     </a>
   );
 };

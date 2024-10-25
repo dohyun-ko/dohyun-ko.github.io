@@ -1,12 +1,10 @@
-import useResponsiveFont from "@/hooks/useResponsiveFont";
-import Font from "@/types/Font";
-import Organization from "@/types/Organization";
-import { formatYearMonth } from "@/utils/dateFormats";
-import formatUrl from "@/utils/formatUrl";
-import { Flex, Text } from "@dohyun-ko/react-atoms";
-import StylessA from "../../../components/StylessA";
-import Card from "./Card";
-import ProjectCard from "./ProjectCard";
+import Organization from '@/types/Organization';
+import { formatYearMonth } from '@/utils/dateFormats';
+import font from '@/utils/font';
+import formatUrl from '@/utils/formatUrl';
+import { twMerge } from 'tailwind-merge';
+import StylessA from '../../../components/StylessA';
+import ProjectCard from './ProjectCard';
 
 interface OrganizationCardProps {
   organization: Organization;
@@ -14,43 +12,39 @@ interface OrganizationCardProps {
 
 const OrganizationCard = ({ organization }: OrganizationCardProps) => {
   const { name, color, url, job, startedAt, endedAt, projects } = organization;
-  const { font } = useResponsiveFont();
 
   return (
-    <Card>
-      <Flex
-        flexDirection="column"
-        style={{
-          borderLeft: `5px solid ${color || "gray"}`,
-          paddingLeft: "10px",
-        }}
+    <div className={'PrintableCard'}>
+      <div
+        className={twMerge(
+          'flex flex-col border-l-[5px] border-solid pl-2.5',
+          color ? `border-[${color}]` : 'border-gray-400',
+        )}
       >
         <StylessA href={url}>
-          <Flex>
-            <Text font={Font.Bold} size={font(1)}>
-              {name}
-            </Text>
+          <div className={'flex flex-wrap'}>
+            <h3 className={twMerge('font-bold', font(1))}>{name}</h3>
 
-            {url && <Text size={font(0.75)}>{formatUrl(url)}</Text>}
-          </Flex>
+            {url && <span className={font(0.75)}>{formatUrl(url)}</span>}
+          </div>
         </StylessA>
 
-        <Text size={font(0.75)}>{job}</Text>
+        <span className={font(0.75)}>{job}</span>
 
-        <Text size={font(0.75)}>
-          {formatYearMonth(new Date(startedAt))} –{" "}
-          {endedAt ? formatYearMonth(new Date(endedAt)) : "Now"}
-        </Text>
-      </Flex>
+        <span className={font(0.75)}>
+          {formatYearMonth(new Date(startedAt))} –{' '}
+          {endedAt ? formatYearMonth(new Date(endedAt)) : 'Now'}
+        </span>
+      </div>
 
-      <Flex flexDirection="column" gap={"20px"}>
+      <div className={'flex flex-col gap-5'}>
         {projects
           .filter((project) => project.isImportant)
           .map((project) => (
             <ProjectCard key={project.name} project={project} />
           ))}
-      </Flex>
-    </Card>
+      </div>
+    </div>
   );
 };
 

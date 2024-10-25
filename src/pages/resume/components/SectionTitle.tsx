@@ -1,4 +1,4 @@
-import useResponsiveFont from '@/hooks/useResponsiveFont';
+import font from '@/utils/font';
 import { twMerge } from 'tailwind-merge';
 
 interface SectionTitleProps {
@@ -6,8 +6,6 @@ interface SectionTitleProps {
 }
 
 const SectionTitle = ({ children }: SectionTitleProps) => {
-  const { font } = useResponsiveFont();
-
   return <h1 className={twMerge('font-bold', font(2.5))}>{children}</h1>;
 };
 

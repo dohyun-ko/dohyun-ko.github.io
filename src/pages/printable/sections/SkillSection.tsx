@@ -1,87 +1,34 @@
-import Font from "@/types/Font";
-import { Flex, Grid, Spacer, Text } from "@dohyun-ko/react-atoms";
-import { useTranslation } from "react-i18next";
-import SectionTitle from "../components/SectionTitle";
-
-const mapFont = (level: number): Font => {
-  switch (level) {
-    case 1:
-      return Font.Thin;
-    case 2:
-      return Font.Light;
-    case 3:
-      return Font.Medium;
-    case 4:
-      return Font.Bold;
-    case 5:
-      return Font.Black;
-    default:
-      return Font.Regular;
-  }
-};
+import { useTranslation } from 'gatsby-plugin-react-i18next';
+import { twMerge } from 'tailwind-merge';
+import SectionTitle from '../components/SectionTitle';
+import * as styles from './skillSection.module.css';
 
 interface SkillSectionProps {}
-
-const skills = [
-  {
-    name: "React",
-    level: 5,
-  },
-  {
-    name: "TypeScript",
-    level: 4,
-  },
-  {
-    name: "Next.js",
-    level: 3,
-  },
-
-  {
-    name: "Python",
-    level: 3,
-  },
-  {
-    name: "NestJS",
-    level: 2,
-  },
-  {
-    name: "FastAPI",
-    level: 2,
-  },
-  {
-    name: "Flutter",
-    level: 2,
-  },
-  {
-    name: "C++",
-    level: 2,
-  },
-];
 
 const SkillSection = ({}: SkillSectionProps) => {
   const { t } = useTranslation();
 
   return (
     <>
-      <Flex>
+      <div className={'flex'}>
         <SectionTitle>보유기술</SectionTitle>
-      </Flex>
+      </div>
 
-      <Spacer height={"10px"} />
+      <div className={'h-2.5'} />
 
-      <Grid gridTemplateColumns="70px 1fr" gap={"0px"}>
-        <Text>전문:</Text>
+      <p className={twMerge('grid grid-cols-[70px_1fr]', styles.sourceCode)}>
+        <span>{t('common.advanced')}:</span>
 
-        <Text font={Font.SourceCodePro} className={"source-code-pro"}>
+        <span className={'source-code-pro'}>
           React&nbsp; TypeScript&nbsp; Next.js
-        </Text>
+        </span>
 
-        <Text>활용:</Text>
+        <span>{t('common.proficient')}:</span>
 
-        <Text font={Font.SourceCodePro}>
+        <span className={'source-code-pro'}>
           Python&nbsp; NestJS&nbsp; FastAPI&nbsp; Flutter
-        </Text>
-      </Grid>
+        </span>
+      </p>
     </>
   );
 };

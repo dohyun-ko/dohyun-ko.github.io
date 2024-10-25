@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 
 const colors = [
-  'rgb(151, 123, 242)',
+  '#977bf2',
   '#EB6263',
   '#4c568f',
   '#008cff',

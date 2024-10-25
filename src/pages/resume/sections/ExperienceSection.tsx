@@ -9,7 +9,7 @@ const ExperienceSection = ({}: ExperienceSectionProps) => {
   const { t } = useTranslation();
 
   return (
-    <div className={'Area'} id="experience-section">
+    <section className={'Area'} id="experience-section">
       <div className={'Content'}>
         <SectionTitle>Experiences</SectionTitle>
 
@@ -25,7 +25,7 @@ const ExperienceSection = ({}: ExperienceSectionProps) => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

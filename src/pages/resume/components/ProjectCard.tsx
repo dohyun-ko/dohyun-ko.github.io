@@ -1,7 +1,7 @@
 import StylessA from '@/components/StylessA';
-import useResponsiveFont from '@/hooks/useResponsiveFont';
 import Project from '@/types/Project';
 import { formatYearMonth } from '@/utils/dateFormats';
+import font from '@/utils/font';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
 import ReactMarkdown from 'react-markdown';
 import { twMerge } from 'tailwind-merge';
@@ -13,13 +13,12 @@ interface ProjectCardProps {
 const ProjectCard = ({ project }: ProjectCardProps) => {
   const { name, url, description, whatIDid, techStacks, startedAt, endedAt } =
     project;
-  const { font } = useResponsiveFont();
   const { t } = useTranslation();
 
   return (
     <div className={'flex flex-col'}>
       <StylessA href={url}>
-        <span className={twMerge('font-semibold', font(1.75))}>{name}</span>
+        <h3 className={twMerge('font-semibold', font(1.75))}>{name}</h3>
       </StylessA>
 
       <span>

@@ -56,7 +56,7 @@
       {
         "name": "Wing: GIST 전산 동아리",
         "isImportant": false,
-        "color": "rgb(151, 123, 242)",
+        "color": "#977bf2",
         "url": "https://wing-homepage.vercel.app/",
         "job": "시니어 부원",
         "startedAt": "2023-03",

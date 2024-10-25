@@ -1,7 +1,7 @@
 import StylessA from '@/components/StylessA';
-import useResponsiveFont from '@/hooks/useResponsiveFont';
 import Organization from '@/types/Organization';
 import { formatYearMonth } from '@/utils/dateFormats';
+import font from '@/utils/font';
 import { twMerge } from 'tailwind-merge';
 import ProjectCard from './ProjectCard';
 
@@ -11,18 +11,17 @@ interface OrganizationCardProps {
 
 const OrganizationCard = ({ organization }: OrganizationCardProps) => {
   const { name, color, url, job, startedAt, endedAt } = organization;
-  const { font } = useResponsiveFont();
 
   return (
     <div className={'Card'}>
       <div
         className={twMerge(
-          'flex flex-col border-l-[5px] border-solid pl-[10px]',
+          'flex flex-col border-l-[5px] border-solid pl-2.5',
           color ? `border-[${color}]` : 'border-gray-400',
         )}
       >
         <StylessA href={url}>
-          <span className={twMerge('font-bold', font(2))}>{name}</span>
+          <h2 className={twMerge('font-bold', font(2))}>{name}</h2>
         </StylessA>
 
         <span>{job}</span>

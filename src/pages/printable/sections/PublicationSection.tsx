@@ -1,8 +1,7 @@
-import Publication from "@/types/Publication";
-import { Flex, Spacer } from "@dohyun-ko/react-atoms";
-import { useTranslation } from "react-i18next";
-import PublicationCard from "../components/PublicationCard";
-import SectionTitle from "../components/SectionTitle";
+import Publication from '@/types/Publication';
+import { useTranslation } from 'react-i18next';
+import PublicationCard from '../components/PublicationCard';
+import SectionTitle from '../components/SectionTitle';
 
 interface PublicationSectionProps {}
 
@@ -13,17 +12,17 @@ const PublicationSection = ({}: PublicationSectionProps) => {
     <>
       <SectionTitle>Publications</SectionTitle>
 
-      <Spacer height={"5px"} />
+      <div className={'h-[5px]'} />
 
-      <Flex flexDirection={"column"} gap={"20px"}>
+      <div className={'flex flex-col gap-5'}>
         {(
-          t("publication.publications", {
+          t('publication.publications', {
             returnObjects: true,
           }) as Publication[]
         ).map((publication) => (
           <PublicationCard key={publication.name} publication={publication} />
         ))}
-      </Flex>
+      </div>
     </>
   );
 };

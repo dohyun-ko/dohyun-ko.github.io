@@ -1,45 +1,47 @@
-import { Area, Content, Spacer } from "@dohyun-ko/react-atoms";
-
-import { graphql } from "gatsby";
-import AwardSection from "./sections/AwardsSection";
-import EducationSection from "./sections/EducationSection";
-import ExperienceSection from "./sections/ExperienceSection";
-import PublicationSection from "./sections/PublicationSection";
-import SideProjectSection from "./sections/SideProjectSection";
-import SkillSection from "./sections/SkillSection";
-import TitleSection from "./sections/TitleSection";
+import { graphql } from 'gatsby';
+import { twMerge } from 'tailwind-merge';
+import * as styles from './printable.module.css';
+import AwardSection from './sections/AwardsSection';
+import EducationSection from './sections/EducationSection';
+import ExperienceSection from './sections/ExperienceSection';
+import PublicationSection from './sections/PublicationSection';
+import SideProjectSection from './sections/SideProjectSection';
+import SkillSection from './sections/SkillSection';
+import TitleSection from './sections/TitleSection';
 
 const PrintablePage = () => {
+  console.log(styles);
+
   return (
-    <Area>
-      <Content width={"92%"}>
+    <div className={twMerge('Area', styles.pretendard)}>
+      <div className={'Content w-[92%]'}>
         <TitleSection />
 
-        <Spacer height={"20px"} />
+        <div className={'h-[20px]'} />
 
         <SkillSection />
 
-        <Spacer height={"30px"} />
+        <div className={'h-[30px]'} />
 
         <ExperienceSection />
 
-        <Spacer height={"30px"} />
+        <div className={'h-[30px]'} />
 
         <EducationSection />
 
-        <Spacer height={"30px"} />
+        <div className={'h-[30px]'} />
 
         <PublicationSection />
 
-        <Spacer height={"20px"} />
+        <div className={'h-[20px]'} />
 
         <SideProjectSection />
 
-        <Spacer height={"20px"} />
+        <div className={'h-[20px]'} />
 
         <AwardSection />
-      </Content>
-    </Area>
+      </div>
+    </div>
   );
 };
 
