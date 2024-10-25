@@ -22,7 +22,7 @@ const OrganizationCard = ({ organization }: OrganizationCardProps) => {
         )}
       >
         <StylessA href={url}>
-          <span className={`font-bold text-[${font(2)}]`}>{name}</span>
+          <span className={twMerge('font-bold', font(2))}>{name}</span>
         </StylessA>
 
         <span>{job}</span>

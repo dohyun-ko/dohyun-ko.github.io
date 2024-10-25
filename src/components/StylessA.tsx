@@ -30,7 +30,9 @@ const StylessA = ({
     >
       {children}
 
-      {href && hasIcon && <img src={LinkIcon} width={16} />}
+      {href && hasIcon && (
+        <img src={LinkIcon} className={'min-w-4 md:min-w-6'} />
+      )}
     </a>
   );
 };

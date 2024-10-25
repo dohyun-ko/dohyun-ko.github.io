@@ -15,7 +15,9 @@ const useResponsiveFont = () => {
           }
         })();
 
-    return `text-[${resized.toString()}rem]`;
+    const className = `text-[${resized}rem] md:text-[${size}rem]`;
+
+    return className;
   };
 
   return { font };

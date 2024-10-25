@@ -18,9 +18,7 @@ const PublicationCard = ({ publication }: PublicationCardProps) => {
   return (
     <div className={'flex flex-col'}>
       <StylessA href={url}>
-        <h3 className={twMerge('font-semibold', `text-[${font(1.5)}]`)}>
-          {name}
-        </h3>
+        <h3 className={twMerge('font-semibold', font(1.5))}>{name}</h3>
       </StylessA>
 
       <span>

@@ -30,12 +30,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
       <ReactMarkdown>{description}</ReactMarkdown>
 
       {whatIDid && whatIDid.length > 0 && (
-        <ul
-          style={{
-            margin: '0px',
-            paddingLeft: '20px',
-          }}
-        >
+        <ul className={'m-0 list-disc pl-5'}>
           {whatIDid.map((whatIDid) => (
             <li key={whatIDid}>
               <p className={font(1)}>{whatIDid}</p>
@@ -45,7 +40,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
           {techStacks && techStacks.length > 0 && (
             <li>
               <p className={font(1)}>
-                {t('common.')}:{' '}
+                {t('common.techStacks')}:{' '}
                 {techStacks.map((techStack) => techStack).join(', ')}
               </p>
             </li>

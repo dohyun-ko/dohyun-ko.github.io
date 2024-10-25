@@ -8,9 +8,7 @@ interface SectionTitleProps {
 const SectionTitle = ({ children }: SectionTitleProps) => {
   const { font } = useResponsiveFont();
 
-  return (
-    <h1 className={twMerge('font-bold', `text-[${font(2.5)}]`)}>{children}</h1>
-  );
+  return <h1 className={twMerge('font-bold', font(2.5))}>{children}</h1>;
 };
 
 export default SectionTitle;

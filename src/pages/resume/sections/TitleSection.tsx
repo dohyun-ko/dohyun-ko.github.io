@@ -12,7 +12,7 @@ const TitleSection = ({}: TitleSectionProps) => {
   return (
     <div className={'Area'} id="title-section">
       <div className={'Content'}>
-        <h1 className={twMerge('font-bold', font(2))}>
+        <h1 className={twMerge('font-thin', font(2))}>
           {t('title.developer')}
         </h1>
         <h1 className={twMerge('font-bold', font(3.5))}>{t('title.name')}</h1>
@@ -22,7 +22,7 @@ const TitleSection = ({}: TitleSectionProps) => {
         <div className={'h-[30px]'} />
 
         <div className={'flex'}>
-          <p className={`text-[${font(1.5)}]`}>
+          <p className={font(1.5)}>
             <StylessA href="mailto:dohyun682@gmail.com" hasIcon={false}>
               dohyun682@gmail.com
             </StylessA>{' '}
