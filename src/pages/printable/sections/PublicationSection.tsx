@@ -1,5 +1,5 @@
 import Publication from '@/types/Publication';
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'gatsby-plugin-react-i18next';
 import PublicationCard from '../components/PublicationCard';
 import SectionTitle from '../components/SectionTitle';
 

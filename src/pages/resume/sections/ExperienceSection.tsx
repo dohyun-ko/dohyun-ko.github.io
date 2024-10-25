@@ -1,5 +1,5 @@
 import Organization from '@/types/Organization';
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'gatsby-plugin-react-i18next';
 import OrganizationCard from '../components/OrganizationCard';
 import SectionTitle from '../components/SectionTitle';
 

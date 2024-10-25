@@ -1,8 +1,7 @@
 import Project from '@/types/Project';
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'gatsby-plugin-react-i18next';
 import ProjectCard from '../components/ProjectCard';
 import SectionTitle from '../components/SectionTitle';
-
 interface AwardSection {}
 
 const AwardSection = ({}: AwardSection) => {

@@ -1,6 +1,6 @@
 import StylessA from '@/components/StylessA';
 import font from '@/utils/font';
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'gatsby-plugin-react-i18next';
 import { twMerge } from 'tailwind-merge';
 
 interface TitleSectionProps {}

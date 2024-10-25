@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkdohyun_ko_github_io=self.webpackChunkdohyun_ko_github_io||[]).push([[213],{3017:function(e,u,h){h.r(u);var n=h(2083),o=h(856),t=h(4848);u.default=e=>{let{children:u}=e;return(0,t.jsx)("h2",{className:(0,o.QP)("font-bold",(0,n.A)(1.25)),children:u})}}}]);
+//# sourceMappingURL=component---src-pages-printable-components-section-title-tsx-b432ca5de0858b36cfb0.js.map

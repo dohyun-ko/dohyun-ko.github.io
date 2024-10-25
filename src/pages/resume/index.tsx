@@ -1,6 +1,6 @@
 import { graphql } from 'gatsby';
 import React from 'react';
-import AwardSection from './sections/\bAwardSection';
+import AwardSection from './sections/AwardSection';
 import CurrentSection from './sections/CurrentSection';
 import EducationSection from './sections/EducationSection';
 import ExperienceSection from './sections/ExperienceSection';

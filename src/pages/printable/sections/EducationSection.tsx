@@ -1,6 +1,6 @@
 import font from '@/utils/font';
 import { Spacer } from '@dohyun-ko/react-atoms';
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'gatsby-plugin-react-i18next';
 import { twMerge } from 'tailwind-merge';
 import SectionTitle from '../components/SectionTitle';
 

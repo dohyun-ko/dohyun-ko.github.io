@@ -1,4 +1,3 @@
-import useIsMobile from '@/hooks/useIsMobile';
 import Project from '@/types/Project';
 import { formatYearMonth } from '@/utils/dateFormats';
 import font from '@/utils/font';
@@ -14,7 +13,6 @@ interface ProjectCardProps {
 const ProjectCard = ({ project }: ProjectCardProps) => {
   const { name, url, description, whatIDid, techStacks, startedAt, endedAt } =
     project;
-  const isMobile = useIsMobile();
 
   return (
     <div className={twMerge('flex-col', font(0.75))}>
