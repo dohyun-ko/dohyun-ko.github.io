@@ -21,16 +21,7 @@ export default {
           },
           keySeparator: '.',
         },
-        pages: [
-          {
-            matchPath: '/:lang?',
-            getLanguageFromPath: true,
-          },
-          {
-            matchPath: '/:lang?/resume',
-            getLanguageFromPath: true,
-          },
-        ],
+        pages: [],
       },
     },
   ],

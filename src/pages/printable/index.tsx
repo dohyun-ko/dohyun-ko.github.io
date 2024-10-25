@@ -1,13 +1,13 @@
+import AwardSection from '@/components/printable/sections/AwardsSection';
+import EducationSection from '@/components/printable/sections/EducationSection';
+import ExperienceSection from '@/components/printable/sections/ExperienceSection';
+import PublicationSection from '@/components/printable/sections/PublicationSection';
+import SideProjectSection from '@/components/printable/sections/SideProjectSection';
+import SkillSection from '@/components/printable/sections/SkillSection';
+import TitleSection from '@/components/printable/sections/TitleSection';
 import { graphql } from 'gatsby';
 import { twMerge } from 'tailwind-merge';
 import * as styles from './printable.module.css';
-import AwardSection from './sections/AwardsSection';
-import EducationSection from './sections/EducationSection';
-import ExperienceSection from './sections/ExperienceSection';
-import PublicationSection from './sections/PublicationSection';
-import SideProjectSection from './sections/SideProjectSection';
-import SkillSection from './sections/SkillSection';
-import TitleSection from './sections/TitleSection';
 
 const PrintablePage = () => {
   console.log(styles);

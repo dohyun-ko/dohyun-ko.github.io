@@ -1,14 +1,14 @@
+import AwardSection from '@/components/resume/sections/AwardSection';
+import CurrentSection from '@/components/resume/sections/CurrentSection';
+import EducationSection from '@/components/resume/sections/EducationSection';
+import ExperienceSection from '@/components/resume/sections/ExperienceSection';
+import MetaSection from '@/components/resume/sections/MetaSection';
+import PublicationSection from '@/components/resume/sections/PublicationSection';
+import SideProjectSection from '@/components/resume/sections/SideProjectSection';
+import SkillSection from '@/components/resume/sections/SkillSection';
+import TitleSection from '@/components/resume/sections/TitleSection';
 import { graphql } from 'gatsby';
 import React from 'react';
-import AwardSection from './sections/AwardSection';
-import CurrentSection from './sections/CurrentSection';
-import EducationSection from './sections/EducationSection';
-import ExperienceSection from './sections/ExperienceSection';
-import MetaSection from './sections/MetaSection';
-import PublicationSection from './sections/PublicationSection';
-import SideProjectSection from './sections/SideProjectSection';
-import SkillSection from './sections/SkillSection';
-import TitleSection from './sections/TitleSection';
 
 interface ResumePageProps {}
 
