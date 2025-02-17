@@ -1,3 +1,8 @@
 {
-  "cSpell.words": ["Infoteam"]
+  "cSpell.words": [
+    "Infoteam"
+  ],
+  "i18n-ally.localesPaths": [
+    "src/locales"
+  ]
 }

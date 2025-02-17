@@ -6,7 +6,7 @@ import { formatYearMonth } from "@/utils/dateFormats";
 import formatUrl from "@/utils/formatUrl";
 import { Flex, Spacer, Text } from "@dohyun-ko/react-atoms";
 import ReactMarkdown from "react-markdown";
-import StylessA from "../../../../components/StylessA";
+import StylessA from "../../../components/StylessA";
 
 interface ProjectCardProps {
   project: Project;

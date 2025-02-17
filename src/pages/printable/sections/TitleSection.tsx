@@ -2,7 +2,7 @@ import useResponsiveFont from "@/hooks/useResponsiveFont";
 import Font from "@/types/Font";
 import { Flex, Spacer, Text } from "@dohyun-ko/react-atoms";
 import { useTranslation } from "react-i18next";
-import StylessA from "../../../../components/StylessA";
+import StylessA from "../../../components/StylessA";
 
 interface TitleSectionProps {}
 

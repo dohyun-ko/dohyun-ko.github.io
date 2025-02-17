@@ -1,8 +1,8 @@
 import Layout from "@/layout/Layout";
 import { createContext, useLayoutEffect, useState } from "react";
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
-import PrintablePage from "./pages/home/printable/PrintablePage";
-import ResumePage from "./pages/home/resume/ResumePage";
+import PrintablePage from "./pages/printable/PrintablePage";
+import ResumePage from "./pages/resume/ResumePage";
 
 export enum RoutePath {
   HOME = "/",

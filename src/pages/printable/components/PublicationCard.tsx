@@ -4,7 +4,7 @@ import Publication from "@/types/Publication";
 import { formatYearMonth } from "@/utils/dateFormats";
 import { Flex, Text } from "@dohyun-ko/react-atoms";
 import ReactMarkdown from "react-markdown";
-import StylessA from "../../../../components/StylessA";
+import StylessA from "../../../components/StylessA";
 
 interface PublicationCardProps {
   publication: Publication;
