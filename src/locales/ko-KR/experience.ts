@@ -120,6 +120,29 @@ const experience = {
       ],
     },
     {
+      name: "Wing: GIST 전산 동아리",
+      isImportant: false,
+      color: "rgb(151, 123, 242)",
+      url: "https://wing-homepage.vercel.app/",
+      job: "시니어 부원",
+      startedAt: "2023-03",
+      endedAt: "2024-12",
+      projects: [
+        {
+          name: "Wing Session",
+          isImportant: true,
+          startedAt: "2023-03",
+          endedAt: "2024-12",
+          description: "Wing에서 개발 상황 교류 및 세션을 진행합니다.",
+          whatIDid: [
+            "모노레포에 도입기 세션 진행",
+            "React.cpp 세션 진행",
+            "UI 라이브러리처럼 코드 짜기: Compound Components 세션 진행",
+          ],
+        },
+      ],
+    },
+    {
       name: "GDSC-GIST",
       isImportant: false,
       color: "#008cff",

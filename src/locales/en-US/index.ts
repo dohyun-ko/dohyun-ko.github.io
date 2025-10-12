@@ -40,6 +40,26 @@ export const main = {
   sideProject: {
     sideProjects: [
       {
+        name: "is-an.ai",
+        isImportant: true,
+        url: "https://is-an.ai",
+        startedAt: "2025-05",
+        endedAt: "2025-09",
+        description:
+          "A free domain service for AI services. PSL registration was attempted but failed.",
+        whatIDid: ["Frontend Development", "Research"],
+      },
+      {
+        name: "Trax Music: GitHub for Musicians",
+        isImportant: true,
+        url: "https://trax-music.com",
+        startedAt: "2024-09",
+        description:
+          "A VCS service for music editing. Provides region-wise feedback features.",
+        whatIDid: ["Frontend Development"],
+        techStacks: ["React", "TypeScript", "WaveSurfer.js"],
+      },
+      {
         name: "React-Atoms: React Component Library",
         isImportant: true,
         url: "https://github.com/dohyun-ko/react-atoms",

@@ -122,6 +122,30 @@ const experience = {
       ],
     },
     {
+      name: "Wing: GIST Computing Club",
+      isImportant: false,
+      color: "rgb(151, 123, 242)",
+      url: "https://wing-homepage.vercel.app/",
+      job: "Senior Member",
+      startedAt: "2023-03",
+      endedAt: "2024-12",
+      projects: [
+        {
+          name: "Wing Session",
+          isImportant: true,
+          startedAt: "2023-03",
+          endedAt: "2024-12",
+          description:
+            "Conducting development knowledge exchange and sessions at Wing.",
+          whatIDid: [
+            "Led a session on introducing mono-repo",
+            "Led a session on React.cpp",
+            "Led a session on writing code like a UI library: Compound Components",
+          ],
+        },
+      ],
+    },
+    {
       name: "GDSC-GIST",
       isImportant: false,
       color: "#008cff",

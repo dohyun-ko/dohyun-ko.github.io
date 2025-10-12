@@ -56,22 +56,10 @@ const skills = [
     level: 2,
   },
   {
-    name: "Kotlin",
-    level: 1,
-  },
-  {
     name: "Docker",
     level: 1,
   },
-  {
-    name: "Rust",
-    level: 1,
-  },
-  {
-    name: "Assembly",
-    level: 1,
-  },
-]
+];
 
 const SkillSection = ({}: SkillSectionProps) => {
   const { t } = useTranslation();

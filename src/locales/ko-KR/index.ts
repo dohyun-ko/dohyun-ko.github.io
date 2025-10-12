@@ -43,6 +43,26 @@ export const main = {
   sideProject: {
     sideProjects: [
       {
+        name: "is-an.ai",
+        isImportant: true,
+        url: "https://is-an.ai",
+        startedAt: "2025-05",
+        endedAt: "2025-09",
+        description:
+          "AI 서비스들을 위한 무료 도메인 서비스입니다. PSL 등록을 시도했으나 실패했습니다.",
+        whatIDid: ["프론트엔드 개발", "리서치"],
+      },
+      {
+        name: "Trax Music: 음악인들을 위한 github",
+        isImportant: true,
+        url: "https://trax-music.com",
+        startedAt: "2024-09",
+        description:
+          "음악 편집을 위한 VCS 서비스입니다. 음악 구간별 피드백 기능을 제공합니다.",
+        whatIDid: ["프론트엔드 개발"],
+        techStacks: ["React", "TypeScript", "WaveSurfer.js"],
+      },
+      {
         name: "React-Atoms: React Component Library",
         isImportant: true,
         url: "https://github.com/dohyun-ko/react-atoms",
