@@ -2,6 +2,7 @@ import current from "./current";
 import experience from "./experience";
 
 export const main = {
+  techStackLabel: "사용 기술",
   title: {
     developer: "Generalist FE 개발자",
     name: "고도현 | Dohyun Ko | 산업기능요원 보충역",
@@ -47,9 +48,8 @@ export const main = {
         isImportant: true,
         url: "https://is-an.ai",
         startedAt: "2025-05",
-        endedAt: "2025-09",
         description:
-          "AI 서비스들을 위한 무료 도메인 서비스입니다. PSL 등록을 시도했으나 실패했습니다.",
+          "AI 서비스들을 위한 무료 도메인 서비스입니다. 현재 에이전트 접근성을 높여가고 있습니다. PSL 등재가 목표입니다.",
         whatIDid: ["프론트엔드 개발", "리서치"],
       },
       {
@@ -57,8 +57,9 @@ export const main = {
         isImportant: true,
         url: "https://trax-music.com",
         startedAt: "2024-09",
+        endedAt: "2026-03",
         description:
-          "음악 편집을 위한 VCS 서비스입니다. 음악 구간별 피드백 기능을 제공합니다.",
+          "음악 제작 과정에서의 협업을 위한 git-like 버전 관리 서비스입니다. 음악 구간별 피드백 기능을 제공합니다.",
         whatIDid: ["프론트엔드 개발"],
         techStacks: ["React", "TypeScript", "WaveSurfer.js"],
       },

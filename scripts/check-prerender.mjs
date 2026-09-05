@@ -17,6 +17,12 @@ for (const prefix of ["", "/ko"]) {
     );
     assert.match(body, /O2ARC 3\.0/, pathname);
     assert.match(body, /is-an\.ai/, pathname);
+    if (page !== "/printable/") {
+      assert.ok(body.includes(korean ? "사용 기술" : "Technologies"), pathname);
+    }
+    if (!korean) {
+      assert.doesNotMatch(body, /사용 기술/, pathname);
+    }
     assert.ok(body.includes(`href="${page}"`), pathname);
     assert.ok(body.includes(`href="/ko${page}"`), pathname);
     assert.match(html, /<style data-styled="true"/, pathname);

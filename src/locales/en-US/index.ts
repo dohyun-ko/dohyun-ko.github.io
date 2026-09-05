@@ -2,6 +2,7 @@ import current from "./current";
 import experience from "./experience";
 
 export const main = {
+  techStackLabel: "Technologies",
   title: { developer: "Generalist Frontend Developer", name: "Dohyun Ko" },
   introduction:
     "A front-end developer, I have led web and app development in startups and labs, with extensive experience from early development to user analytics. \n Focused on developing user-centered services utilizing a diverse technology stack. I also run conferences and work to vitalize the local developer ecosystem",
@@ -44,9 +45,8 @@ export const main = {
         isImportant: true,
         url: "https://is-an.ai",
         startedAt: "2025-05",
-        endedAt: "2025-09",
         description:
-          "A free domain service for AI services. PSL registration was attempted but failed.",
+          "A free domain service for AI services. Improving access for AI agents, with the goal of inclusion in the Public Suffix List (PSL).",
         whatIDid: ["Frontend Development", "Research"],
       },
       {
@@ -54,8 +54,9 @@ export const main = {
         isImportant: true,
         url: "https://trax-music.com",
         startedAt: "2024-09",
+        endedAt: "2026-03",
         description:
-          "A VCS service for music editing. Provides region-wise feedback features.",
+          "A Git-like version control service for collaboration in music production. Supports feedback on specific sections of a track.",
         whatIDid: ["Frontend Development"],
         techStacks: ["React", "TypeScript", "WaveSurfer.js"],
       },

@@ -1,10 +1,10 @@
 import StylessA from "@/components/StylessA";
-import useIsMobile from "@/hooks/useIsMobile";
 import useResponsiveFont from "@/hooks/useResponsiveFont";
 import Font from "@/types/Font";
 import Project from "@/types/Project";
 import { formatYearMonth } from "@/utils/dateFormats";
 import { Flex, Text } from "@dohyun-ko/react-atoms";
+import { useTranslation } from "react-i18next";
 import ReactMarkdown from "react-markdown";
 
 interface ProjectCardProps {
@@ -15,7 +15,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
   const { name, url, description, whatIDid, techStacks, startedAt, endedAt } =
     project;
   const { font } = useResponsiveFont();
-  const isMobile = useIsMobile();
+  const { t } = useTranslation();
 
   return (
     <Flex flexDirection="column">
@@ -48,7 +48,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
           {techStacks && techStacks.length > 0 && (
             <li>
               <Text size={font(1)}>
-                사용 기술: {techStacks.map((techStack) => techStack).join(", ")}
+                {t("techStackLabel")}: {techStacks.join(", ")}
               </Text>
             </li>
           )}
