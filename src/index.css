@@ -12,6 +12,17 @@ p {
   margin: 0; /* for ReactMarkdown */
 }
 
+.language-nav {
+  padding-top: 20px;
+  text-align: right;
+}
+
+@media print {
+  .language-nav {
+    display: none;
+  }
+}
+
 @font-face {
   font-family: PretendardW100;
   src: url("./assets/fonts/pretendard/Pretendard-Thin.woff");

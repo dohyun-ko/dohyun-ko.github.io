@@ -1,14 +1,8 @@
 import Layout from "@/layout/Layout";
-import { createContext, useLayoutEffect, useState } from "react";
-import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import { createContext, useEffect, useState } from "react";
+import { Navigate, Route, Routes } from "react-router-dom";
 import PrintablePage from "./pages/printable/PrintablePage";
 import ResumePage from "./pages/resume/ResumePage";
-
-export enum RoutePath {
-  HOME = "/",
-  RESUME = "/resume",
-  PRINTABLE = "/printable",
-}
 
 type LayoutContextType = {
   windowWidth: number;
@@ -21,7 +15,7 @@ export const LayoutContext = createContext<LayoutContextType>({
 function App() {
   const [windowWidth, setWindowWidth] = useState(0);
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     const updateWidth = () => {
       setWindowWidth(window.innerWidth);
     };
@@ -37,16 +31,21 @@ function App() {
         windowWidth,
       }}
     >
-      <BrowserRouter>
-        <Routes>
-          <Route element={<Layout />}>
-            {/* <Route path={RoutePath.HOME} element={<HomePage />} /> */}
-            <Route path={"*"} element={<Navigate to="/resume" replace />} />
-            <Route path={RoutePath.RESUME} element={<ResumePage />} />
-            <Route path={RoutePath.PRINTABLE} element={<PrintablePage />} />
+      <Routes>
+        {["/", "/ko"].map((path) => (
+          <Route key={path} path={path} caseSensitive element={<Layout />}>
+            <Route index element={<ResumePage />} />
+            <Route path="resume" element={<ResumePage />} />
+            <Route path="printable" element={<PrintablePage />} />
           </Route>
-        </Routes>
-      </BrowserRouter>
+        ))}
+        <Route
+          path="/ko/*"
+          caseSensitive
+          element={<Navigate to="/ko/resume/" replace />}
+        />
+        <Route path="*" element={<Navigate to="/resume/" replace />} />
+      </Routes>
     </LayoutContext.Provider>
   );
 }

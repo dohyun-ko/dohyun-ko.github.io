@@ -1,4 +1,32 @@
-# GIST Infoteam Frontend Template
+# Dohyun Ko's Resume
+
+## Static HTML build
+
+```sh
+corepack yarn install --immutable
+corepack yarn build
+corepack yarn preview
+```
+
+`yarn build` renders the existing React pages and their styled-components CSS into
+HTML, then verifies the content, language, links, styles, and asset paths. No
+JavaScript is needed to read the published resume. React hydrates the HTML in the
+browser to enable the responsive layout.
+
+| Page      | English       | Korean           |
+| --------- | ------------- | ---------------- |
+| Home      | `/`           | `/ko/`           |
+| Resume    | `/resume/`    | `/ko/resume/`    |
+| Printable | `/printable/` | `/ko/printable/` |
+
+Language follows the URL. The language links work without JavaScript.
+Edit the resume in `src/locales/en-US` and `src/locales/ko-KR`.
+
+GitHub Actions installs dependencies, builds and verifies the HTML, and deploys
+`build/` to GitHub Pages on pushes to `main`. Generated files do not need to be
+committed. The server bundle in `.cache/prerender/` is only used during the build.
+
+Run `node scripts/check-prerender.mjs` to check an existing build again.
 
 ## 구성 요소
 

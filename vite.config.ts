@@ -9,6 +9,9 @@ export default defineConfig({
     outDir: "build",
   },
   resolve: {},
+  ssr: {
+    noExternal: ["@dohyun-ko/react-atoms", "styled-components", /^@emotion\//],
+  },
   server: {
     open: true, //개발 서버를 실행할 때 브라우저를 자동으로 엽니다.
     port: 3000, //3000번 포트로 개발 서버를 실행합니다.
@@ -22,7 +25,11 @@ export default defineConfig({
     },
   },
   plugins: [
-    react(),
+    react({
+      babel: {
+        plugins: [["babel-plugin-styled-components", { displayName: false }]],
+      },
+    }),
     tsconfigPaths(),
     svgr({
       include: "**/*.svg",

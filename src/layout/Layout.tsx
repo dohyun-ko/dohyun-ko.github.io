@@ -1,7 +1,7 @@
-import { MyThemeProvider } from "@dohyun-ko/react-atoms";
+import { Area, Content, MyThemeProvider } from "@dohyun-ko/react-atoms";
 import { useAtom } from "jotai";
 import React from "react";
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { modalListAtom } from "store";
@@ -43,9 +43,24 @@ export const ModalBackdrop = styled.div`
 
 const Layout: React.FC = () => {
   const [modalList, setModalList] = useAtom(modalListAtom);
+  const { pathname } = useLocation();
+  const pagePath = pathname.replace(/^\/ko(?=\/|$)/, "") || "/";
 
   return (
     <MyThemeProvider>
+      <Area>
+        <Content>
+          <nav aria-label="Language" className="language-nav">
+            <a href={pagePath} hrefLang="en-US" lang="en">
+              English
+            </a>
+            {" / "}
+            <a href={`/ko${pagePath}`} hrefLang="ko-KR" lang="ko">
+              한국어
+            </a>
+          </nav>
+        </Content>
+      </Area>
       <Outlet />
 
       {modalList.map((modal, index) => (
